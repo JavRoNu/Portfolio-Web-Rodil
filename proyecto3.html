@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+      <meta charset="UTF-8">
+      <META HTTP-EQUIV = "X-UA-<!doctype html">
+      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <title>Carlos Rodil Cinematographer</title>
+      
+      <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+
+            <!--Bootrap 5 descargado y en el repo 
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
+      <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
+
+      <!--Bootstrap 5 CDN-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Mis estilos aparte -->
+      <link rel="stylesheet" href="miestilo.css">
+
+      <!-- Lo de fontAwesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Libreria de animaciones con scroll  antes de \body poner js -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+       <!-- Choice CDN -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+       <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+
+      <!-- Para alterar los stylos de forma interactiva-->
+      <style id="custom-styles"></style>
+      <style id="add-gf"></style>
+
+        <!-- precargar lo de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="gfontadd">
+      
+  </head>
+  <body id = "lgrad">
+
+    <!-- Barra de navegación superior-->
+    <nav class="navbar navbar-light navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 mt-3"href="main.html">
+              <div class = "carlosRodil">Carlos Rodil</div>
+              <div class = "cinemato">CINEMATOGRAPHER</div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto pe-5">
+              <li class="nav-item">
+                <!-- Button desplegable  -->
+                <button class="btn btn-white btn-outline-danger" type="button" id="modificar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Modificar
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navsec" href="allprojects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navsec" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+
+    <!--Jumbotron superior-->
+                <!-- Desplegable  -->
+                <div class="collapse mb-3" id="collapseExample">
+                  <div class="container-lg border py-3 border-danger" id = "optionmenucon">
+                    <div class="row">
+                      <div class="col">
+                        <h5>Brillo</h5>
+                        <p id=brillo_txt>Cambiar brillo al (50%)</p>
+                        <div class="range" style="--step:5; --min:0; --max:100">
+                          <input onchange="cambioBrillo()" type="range" min="0" max="100" step="5" value="50" id="brillo">
+                        </div>
+                        <p class="pt-5" id=brillo_seg_txt>Duración transición en seg (1)</p>
+                        <div class="range" style="--step:0.1; --min:0; --max:2">
+                          <input onchange="cambioBrillo()" type="range" min="0" max="2" step="0.1" value="1" id="brillo_seg">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h5>Zoom</h5>
+                        <p id=zoom_txt>Cambio del Zoom (1.1)</p>
+                        <div class="range" style="--step:0.1; --min:1; --max:2">
+                          <input onchange="cambiozoom()" type="range" min="1" max="1.5" step="0.01" value="1.1" id="zoom">
+                        </div>
+                        <p class="pt-5" id=zoom_seg_txt>Duración transición en seg (1)</p>
+                        <div class="range" style="--step:0.1; --min:0; --max:2">
+                          <input onchange="cambiozoom()" type="range" min="0" max="2" step="0.1" value="1" id="zoom_seg">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h5>Texto</h5>
+                        <p id=txtopa_txt>Tiempo hasta aparecer en seg (1)</p>
+                        <div class="range" style="--step:0.1; --min:0; --max:2">
+                          <input onchange="cambiotexto()" type="range" min="0" max="2" step="0.1" value="1.1" id="txtopa">
+                        </div>
+                        <h5 class = "pt-5">Espacio</h5>
+                        <p id=pad_txt>Padding entre imagenes </p>
+                        <div class="range" style="--step:1; --min:1; --max:5">
+                          <input onchange="cambiopadding()" type="range" min="1" max="5" step="1" value="1.1" id="imgpad">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row pt-5">
+                      <h5>Fondo en degradado</h5>
+                      <a href="https://cssgradient.io/">Copia y pega de esta página</a>
+                        <p>Asegurate que este marcado lo de <b>MAX COMPATIBILITY (IE6+)</b></p>
+                        <div class="input-group">
+                          <span class="input-group-text">Pega aquí</span>
+                          <textarea class="form-control" id="fondoDeg" aria-label="With textarea" onchange="cambiofondo()"></textarea>
+                        </div>
+            
+                    </div>
+                    <div class="row pt-5">
+                      <h5>Fuente</h5>
+                      <div class="col">
+                        <p>Seleccionar fuente de <a href="https://fonts.google.com/">google fonts</a></P>
+                        <select class="selectpicker form-control form-select-sm" id="fontselect" placeholder="Busca la fuente.." onchange="mirarCursi()">
+                        </select>
+                      </div>
+                      <div class="col">
+                        <p class="pb-3"> Seleciona el peso de la fuente </p>
+                        <select class="form-select form-select-sm" id="fontwght" aria-label=".form-select-sm example">
+            
+                        </select>
+                      </div>
+            
+                      <div class="col">
+                        <div class="form-check form-switch pb-4">
+                          <input class="form-check-input" type="checkbox" id="cursive" disabled>
+                          <label class="form-check-label" for="cursive">En Cursiva</label>
+                        </div>
+                        <button class="btn btn-primary" type="button" onclick="updateFont()">
+                          Cambiar fuente
+                        </button>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+            
+                  </div>
+                </div>
+
+    <div class="container-lg" id ="jtcontainer">
+        <div class="ratio ratio-16x9 shadow">
+            <iframe src="https://player.vimeo.com/video/478728673?autoplay=1&loop=1&muted=1" frameborder="0"
+              allow="autoplay; fullscreen"  allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- info relevante -->
+    <div class="container-fluid pb-5 pt-5 pl-3 pr-3"data-aos="fade-up">
+        <div class="text-start infoproj">
+            <p class = "fw-bold fs-3"> El titulo del proyecto</h3>
+            <p> Info del proyecto puede ser unas lineas parrafos o listas</p>
+            <ul class="list-unstyled">
+                <li><b>Primero:</b>   An item </li>
+                <li><b>Segundo:</b>  A second item</li>
+                <li><b>Director:</b>  A third item</li>
+                <li><b>Productor:</b>  A fourth item</li>
+                <li><b>Tu vieja:</b>  And a fifth one</li>
+              </ul>
+
+        </div>
+    </div>
+
+    <!-- Zona imagenes -->
+
+    <!-- Galeria basica -->
+    <div class="container-lg gallery-ho" id="thumbga"> 
+      <div class="row row-cols-md-2 row-cols-lg-3 d-flex flex-wrap align-items-center" data-toggle="modal" data-target="#lightbox">
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="0">
+            <img src="media/zero/zero_01_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="1">
+            <img src="media/zero/zero_02_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="2">
+            <img src="media/zero/zero_03_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="3">
+            <img src="media/zero/zero_04_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="4">
+            <img src="media/zero/zero_05_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="5">
+            <img src="media/zero/zero_06_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="6">
+            <img src="media/zero/zero_07_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+        <div class="col-sm pt-3"data-aos="fade-up">
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="7">
+            <img src="media/zero/zero_08_cro.jpg" class = "img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal del zoom -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" style = "max-width: 70%;max-height: 70%;">
+          <div class="modal-content">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner overflow-hidden">
+                      <div class="carousel-item active">
+                          <img src="media/zero/zero_01_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_02_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_03_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_04_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_05_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_06_cro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="media/zero/zero_07_cro.jpg" class="d-block w-100" alt="..." >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="media/zero/zero_08_cro.jpg" class="d-block w-100" alt="...">
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+      <!-- Footer con RRSS -->
+      <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
+        <div class="d-flex justify-content-center">
+        <a class="shadow btn btn-white"
+         href="https://vimeo.com/carlosrodil"
+          role="button"><i class="fab fa-vimeo-v"></i>
+        </a>
+        <a class="shadow btn btn-white mx-4"
+          href="https://www.instagram.com/carlos.rodil_/" 
+          role="button"><i class="fab fa-instagram"></i>
+        </a>
+          <a class="shadow btn btn-white"
+            href="https://www.imdb.com/name/nm7492357/"
+             role="button"><i class="fab fa-imdb"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Footer con registro -->
+    <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
+      <p id ="elcopy">©2022 Carlos Rodil Pardo . All rights reserved. No part of this website may be reproduced without permission.</p>
+    </div>
+  
+      <!--Para la libreria de animación con scroll-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>  
+  
+            <!-- Funciones propias en js de modificación etc -->
+            <script src="mijava.js"></script>
+            <script src="carrousell.js"></script>
+
+ </body>
+</html>
