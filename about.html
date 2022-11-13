@@ -60,10 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto pe-5">
               <li class="nav-item">
-                <!-- Button desplegable  -->
-                <button class="btn btn-white btn-outline-danger" type="button" id="modificar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Modificar
-                </button>
+                <a class="nav-link navsec" href="about2.html">Reel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navsec" href="allprojects.html">Projects</a>
@@ -75,113 +72,38 @@
           </div>
         </div>
       </nav>
-
-   
-                <!-- Desplegable  -->
-                <div class="collapse mb-3" id="collapseExample">
-                  <div class="container-lg border py-3 border-danger" id = "optionmenucon">
-                    <div class="row">
-                      <div class="col">
-                        <h5>Brillo</h5>
-                        <p id=brillo_txt>Cambiar brillo al (50%)</p>
-                        <div class="range" style="--step:5; --min:0; --max:100">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="100" step="5" value="50" id="brillo">
-                        </div>
-                        <p class="pt-5" id=brillo_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="2" step="0.1" value="1" id="brillo_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Zoom</h5>
-                        <p id=zoom_txt>Cambio del Zoom (1.1)</p>
-                        <div class="range" style="--step:0.1; --min:1; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="1" max="1.5" step="0.01" value="1.1" id="zoom">
-                        </div>
-                        <p class="pt-5" id=zoom_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="0" max="2" step="0.1" value="1" id="zoom_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Texto</h5>
-                        <p id=txtopa_txt>Tiempo hasta aparecer en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiotexto()" type="range" min="0" max="2" step="0.1" value="1.1" id="txtopa">
-                        </div>
-                        <h5 class = "pt-5">Espacio</h5>
-                        <p id=pad_txt>Padding entre imagenes </p>
-                        <div class="range" style="--step:1; --min:1; --max:5">
-                          <input onchange="cambiopadding()" type="range" min="1" max="5" step="1" value="1.1" id="imgpad">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fondo en degradado</h5>
-                      <a href="https://cssgradient.io/">Copia y pega de esta página</a>
-                        <p>Asegurate que este marcado lo de <b>MAX COMPATIBILITY (IE6+)</b></p>
-                        <div class="input-group">
-                          <span class="input-group-text">Pega aquí</span>
-                          <textarea class="form-control" id="fondoDeg" aria-label="With textarea" onchange="cambiofondo()"></textarea>
-                        </div>
-            
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fuente</h5>
-                      <div class="col">
-                        <p>Seleccionar fuente de <a href="https://fonts.google.com/">google fonts</a></P>
-                        <select class="selectpicker form-control form-select-sm" id="fontselect" placeholder="Busca la fuente.." onchange="mirarCursi()">
-                        </select>
-                      </div>
-                      <div class="col">
-                        <p class="pb-3"> Seleciona el peso de la fuente </p>
-                        <select class="form-select form-select-sm" id="fontwght" aria-label=".form-select-sm example">
-            
-                        </select>
-                      </div>
-            
-                      <div class="col">
-                        <div class="form-check form-switch pb-4">
-                          <input class="form-check-input" type="checkbox" id="cursive" disabled>
-                          <label class="form-check-label" for="cursive">En Cursiva</label>
-                        </div>
-                        <button class="btn btn-primary" type="button" onclick="updateFont()">
-                          Cambiar fuente
-                        </button>
-                      </div>
-                      <div class="col"></div>
-                    </div>
-            
-                  </div>
-                </div> 
     <!-- info about -->
-    <div class="container-lg py-5 mb-3">
-
-    </div>
-    <div class="container-lg pb-5 pt-5  pl-3 pr-3">
-        <div class="text-start" id = "personalinfo">
-            <p class = "fw-bold fs-3"> About:</p>
-            <p> Carlos Rodil is a cinematogrpaher currently based in Madrid Spain.</p>
-            <p><a href="tel:34661809094"><i class="fab fa-whatsapp"></i> +34 661 809 094</a></p>
-            <p><a href="mailto:carlosrodil12@gmail.com"><i class="fa fa-envelope"></i> carlosrodil12@gmail.com</a></p>
-                </div>
+    <div class="container-lg pb-5 pt-5 pl-3 pr-3">
+            <div class="row d-flex justify-content-center">
+                <img src="media/about_profile_res.jpeg"
+                style = "max-width: 404px; max-height: 405px;">
+            </div>
+            <div class="row d-flex justify-content-center text-center pt-5" id = "personalinfo">
+                <p class = "fw-bold fs-3"> About:</p>
+                <p>Carlos Rodil is a cinematographer born in Lugo and currently based in Madrid, Spain. He graduated in cinematography studies at ECAM.</p>
+                <p><a href="tel:34661809094"><i class="fab fa-whatsapp"></i> +34 661 809 094</a></p>
+                <p><a href="mailto:carlosrodil12@gmail.com"><i class="fa fa-envelope"></i> carlosrodil12@gmail.com</a></p>
+            </div>
         </div>
+    </div>
 
       <!-- Footer con RRSS -->
       <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
         <div class="d-flex justify-content-center">
-        <a class="shadow btn btn-white"
-         href="https://vimeo.com/carlosrodil"
-          role="button"><i class="fab fa-vimeo-v"></i>
-        </a>
-        <a class="shadow btn btn-white mx-4"
-          href="https://www.instagram.com/carlos.rodil_/" 
-          role="button"><i class="fab fa-instagram"></i>
-        </a>
-          <a class="shadow btn btn-white"
-            href="https://www.imdb.com/name/nm7492357/"
-             role="button"><i class="fab fa-imdb"></i>
-          </a>
+            <div id = "gogo">
+                <a class="shadow btn btn-white"
+                href="https://vimeo.com/carlosrodil"
+                role="button"><i class="fab fa-vimeo-v"></i>
+                </a>
+                <a class="shadow btn btn-white mx-4"
+                href="https://www.instagram.com/carlos.rodil_/" 
+                role="button"><i class="fab fa-instagram"></i>
+                </a>
+                <a class="shadow btn btn-white"
+                    href="https://www.imdb.com/name/nm7492357/"
+                    role="button"><i class="fab fa-imdb"></i>
+                </a>
+            </div>
         </div>
       </div>
   

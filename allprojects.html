@@ -50,7 +50,7 @@
     <!-- Barra de navegación superior-->
     <nav class="navbar navbar-light navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 mt-3"href="index.html">
+          <a class="navbar-brand ms-5 mt-3"href="../index.html">
               <div class = "carlosRodil">Carlos Rodil</div>
               <div class = "cinemato">CINEMATOGRAPHER</div>
           </a>
@@ -60,23 +60,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto pe-5">
               <li class="nav-item">
-                <!-- Button desplegable  -->
-                <button class="btn btn-white btn-outline-danger" type="button" id="modificar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Modificar
-                </button>
+                <a class="nav-link navsec" href="../about2.html">Reel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navsec">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="about.html">About</a>
+                <a class="nav-link navsec" href="../about.html">About</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <!--Jumbotron superior-->
     <div class="container-lg py-5">
 
     </div>
@@ -87,175 +83,175 @@
              </div>
             <div class="btn-group btn-group-sm fs-5" role="group" aria-label="...">   
             <button class="button mx-4 px-4" id="projnar" onclick="filterproj('Narrative')">Narrative</button>
-            <button class="button mx-4 px-4" id="projmus"onclick="filterproj('Music')">Music</button>
+            <button class="button mx-4 px-4" id="projmus"onclick="filterproj('Music')">Music video</button>
         </div>
 
     </div>
-                <!-- Desplegable  -->
-                <div class="collapse mb-3" id="collapseExample">
-                  <div class="container-lg border py-3 border-danger" id = "optionmenucon">
-                    <div class="row">
-                      <div class="col">
-                        <h5>Brillo</h5>
-                        <p id=brillo_txt>Cambiar brillo al (50%)</p>
-                        <div class="range" style="--step:5; --min:0; --max:100">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="100" step="5" value="50" id="brillo">
-                        </div>
-                        <p class="pt-5" id=brillo_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="2" step="0.1" value="1" id="brillo_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Zoom</h5>
-                        <p id=zoom_txt>Cambio del Zoom (1.1)</p>
-                        <div class="range" style="--step:0.1; --min:1; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="1" max="1.5" step="0.01" value="1.1" id="zoom">
-                        </div>
-                        <p class="pt-5" id=zoom_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="0" max="2" step="0.1" value="1" id="zoom_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Texto</h5>
-                        <p id=txtopa_txt>Tiempo hasta aparecer en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiotexto()" type="range" min="0" max="2" step="0.1" value="1.1" id="txtopa">
-                        </div>
-                        <h5 class = "pt-5">Espacio</h5>
-                        <p id=pad_txt>Padding entre imagenes </p>
-                        <div class="range" style="--step:1; --min:1; --max:5">
-                          <input onchange="cambiopadding()" type="range" min="1" max="5" step="1" value="1.1" id="imgpad">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fondo en degradado</h5>
-                      <a href="https://cssgradient.io/">Copia y pega de esta página</a>
-                        <p>Asegurate que este marcado lo de <b>MAX COMPATIBILITY (IE6+)</b></p>
-                        <div class="input-group">
-                          <span class="input-group-text">Pega aquí</span>
-                          <textarea class="form-control" id="fondoDeg" aria-label="With textarea" onchange="cambiofondo()"></textarea>
-                        </div>
-            
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fuente</h5>
-                      <div class="col">
-                        <p>Seleccionar fuente de <a href="https://fonts.google.com/">google fonts</a></P>
-                        <select class="selectpicker form-control form-select-sm" id="fontselect" placeholder="Busca la fuente.." onchange="mirarCursi()">
-                        </select>
-                      </div>
-                      <div class="col">
-                        <p class="pb-3"> Seleciona el peso de la fuente </p>
-                        <select class="form-select form-select-sm" id="fontwght" aria-label=".form-select-sm example">
-            
-                        </select>
-                      </div>
-            
-                      <div class="col">
-                        <div class="form-check form-switch pb-4">
-                          <input class="form-check-input" type="checkbox" id="cursive" disabled>
-                          <label class="form-check-label" for="cursive">En Cursiva</label>
-                        </div>
-                        <button class="btn btn-primary" type="button" onclick="updateFont()">
-                          Cambiar fuente
-                        </button>
-                      </div>
-                      <div class="col"></div>
-                    </div>
-            
-                  </div>
-                </div>
 
      <!---Grid dos columnas para proyectos-->
      <div class = "container-lg pt-5 mt-2">
-      <div class="row row-cols-md-2 row-cols-lg-2 d-flex flex-wrap align-items-center"  id ="projsec">
+      <div class="row row-cols-md-3 row-cols-lg-3 d-flex flex-wrap align-items-center"  id ="projsec">
           <div class = "col-md p-2">
             <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="proyecto1.html">
-                <img src="media/thumbs/1_169_res.jpg" class = "img-fluid">
+              <img src="media/sebastian/sebastian_thumb_res.jpg" class = "img-fluid">
+              <a href="projects/sebastian.html">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 1 </p>
-                  <p class = "fs-5 fst-italic">Music</p>
+                  <p class = "fs-5">Sebastián Cortés – Nunca lo hicimos</p>
+                  <p class = "fs-6 fst-italic">Music video</p>
+                </div>   
+              </a>
+            </div>
+          </div>
+          <div class = "col-md p-2" >
+            <div class="img-ho img_wrap_c ratio ratio-16x9">                
+              <img src="media/kim/kim_thumb_res.jpg"class = "img-fluid">
+              <a href="projects/kim.html">
+                <div class="img_description_wht">
+                  <p class = "fs-5">Kimberley Tell - Papelito</p>
+                  <p class = "fs-6 fst-italic">Music video</p>
                 </div>
               </a>
             </div>
           </div>
           <div class = "col-md p-2" >
             <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="proyecto1_lz.html">
-                <img src="media/thumbs/2_169_res.jpg"class = "img-fluid">
+              <img src="media/mundos/mundos_thumb_res.jpg" class = "img-fluid">
+              <a href="projects/mundos.html">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 1 lazy Load</p>
-                  <p class = "fs-5 fst-italic">Commercial</p>
+                  <p class = "fs-5">MUNDOS | Cinematography Reel</p>
+                  <p class = "fs-6 fst-italic">Narrative - shortfilm</p>
                 </div>
               </a>
             </div>
           </div>
           <div class = "col-md p-2" >
             <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="proyecto2.html">
-                <img src="media/thumbs/3_169_res.jpg" class = "img-fluid">
+              <img src="media/deva/deva_thumb_res.jpg" class = "img-fluid">
+              <a href="projects/deva.html">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 2</p>
-                  <p class = "fs-5 fst-italic">Narrative</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-md p-2" >
-            <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="proyecto2_lz.html">
-                <img src="media/thumbs/4_169_res.jpg" class = "img-fluid">
-                <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 2 lazy load</p>
-                  <p class = "fs-5 fst-italic">Music</p>
+                  <p class = "fs-5">Deva - Borracha</p>
+                  <p class = "fs-6 fst-italic">Music video</p>
                 </div>
               </a>
             </div>
           </div>
       <div class = "col-md p-2" >
         <div class="img-ho img_wrap_c ratio ratio-16x9">
-          <a href="proyecto3.html">
-            <img src="media/thumbs/5_169_res.jpg" class = "img-fluid">
+          <img src="media/lorente/lorente_thumb_res.jpg" class = "img-fluid">
+          <a href="projects/lorente.html">
             <div class="img_description_wht">
-              <p class = "fs-4">Galeria 3</p>
-              <p class = "fs-5 fst-italic">Narrative</p>
+              <p class = "fs-5">Jaime Lorente - Mirando al Sol</p>
+              <p class = "fs-6 fst-italic">Music video</p>
             </div>
           </a>
         </div>
       </div>
       <div class = "col-md p-2" >
         <div class="img-ho img_wrap_c ratio ratio-16x9">
-          <a href="proyecto3_lz.html">
-            <img src="media/thumbs/6_169_res.jpg" class = "img-fluid">
+          <img src="media/marem/marem_thumb_res.jpg" class = "img-fluid">
+          <a href="projects/marem.html">
             <div class="img_description_wht">
-              <p class = "fs-4">Galeria 3 lazy load</p>
-              <p class = "fs-5 fst-italic">Music</p>
+              <p class = "fs-5">Marem Ladson - Back To The Sea</p>
+              <p class = "fs-6 fst-italic">Music video</p>
             </div>
           </a>  
         </div>
       </div>
   <div class = "col-md p-2" >
     <div class="img-ho img_wrap_c ratio ratio-16x9">
-      <a href="proyecto4.html">
-        <img src="media/thumbs/7_169_res.jpeg" class = "img-fluid">
+      <img src="media/borbones/borbones_thumb_res.jpeg" class = "img-fluid">
+      <a href="projects/borbones.html"> 
         <div class="img_description_wht">
-          <p class = "fs-4">Galeria 4</p>
-          <p class = "fs-5 fst-italic">Narrative</p>
+          <p class = "fs-5">Los Borbones: una familia real</p>
+          <p class = "fs-6 fst-italic">Narrative - TV series</p>
         </div>
       </a>
     </div>
   </div>
   <div class = "col-md p-2" >
     <div class="img-ho img_wrap_c ratio ratio-16x9">
-      <a href="proyecto4_lz.html">
-        <img src="media/thumbs/11_169_res.jpg" class = "img-fluid">
+      <img src="media/locos/locos_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/locos.html">
         <div class="img_description_wht">
-          <p class = "fs-4">Galeria 4</p>
-          <p class = "fs-5 fst-italic">Commercial</p>
+          <p class = "fs-5">ODDLIQUOR - Locos</p>
+          <p class = "fs-6 fst-italic">Music video</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/elite/elite_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/elite.html">
+        <div class="img_description_wht">
+          <p class = "fs-5">ELITE TEASER (Director’s cut)</p>
+          <p class = "fs-6 fst-italic">Commercial</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9"> 
+      <img src="media/afternoon/afternoon_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/afternoon.html">
+        <div class="img_description_wht">
+          <p class = "fs-5">AFTERNOON</p>
+          <p class = "fs-6 fst-italic">Narrative - shortfilm</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/rada/rada_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/rada.html">
+        <div class="img_description_wht">
+          <p class = "fs-5">Rada Mancy, LOWLIGHT - Hazme de todo</p>
+          <p class = "fs-6 fst-italic">Music video</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/anaju/anaju_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/anaju.html">
+        <div class="img_description_wht">
+          <p class = "fs-5">Anaju - Ese o Ese</p>
+          <p class = "fs-6 fst-italic">Music video</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/baywaves/baywaves_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/baywaves.html">  
+        <div class="img_description_wht">
+          <p class = "fs-5">Baywaves ft. Megansito el Guapo - Drip</p>
+          <p class = "fs-6 fst-italic">Music video</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/lovebomb/lovebomb_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/lovebomb.html"> 
+        <div class="img_description_wht">
+          <p class = "fs-5">Brotha CJ - Love Bomb (Dattie Capelli, Kasem)</p>
+          <p class = "fs-6 fst-italic">Music video</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class = "col-md p-2" >
+    <div class="img-ho img_wrap_c ratio ratio-16x9">
+      <img src="media/nodormiremos/nodormiremos_thumb_res.jpg" class = "img-fluid">
+      <a href="projects/nodormiremos.html">  
+        <div class="img_description_wht">
+          <p class = "fs-5">No Dormiremos Nunca Más</p>
+          <p class = "fs-6 fst-italic">Narrative - shortfilm</p>
         </div>
       </a>
     </div>
@@ -265,6 +261,7 @@
     <!-- Footer con RRSS -->
     <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
       <div class="d-flex justify-content-center">
+      <div id = "gogo"> 
       <a class="shadow btn btn-white"
        href="https://vimeo.com/carlosrodil"
         role="button"><i class="fab fa-vimeo-v"></i>
@@ -277,6 +274,7 @@
           href="https://www.imdb.com/name/nm7492357/"
            role="button"><i class="fab fa-imdb"></i>
         </a>
+        </div>
       </div>
     </div>
 

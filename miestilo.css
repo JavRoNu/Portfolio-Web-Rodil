@@ -110,8 +110,8 @@ Media query para los 2 navbar
 #introiframe{
     max-width: 80%;
     max-height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-top: 5%;
 }
 
@@ -132,15 +132,13 @@ Media query para los 2 navbar
 }
 
 .img-ho img {
-  transform-origin: 50% 65%;
-  transition: transform 2s ease , filter .5s ease-in-out ;
+  transition: filter .03s ease-in-out ;
   filter: brightness(100%);
 
 } 
 
 .img-ho:hover img {
-  transform: scale(1.1);
-  filter: brightness(50%);
+  filter: brightness(75%);
 }
 
 
@@ -172,9 +170,10 @@ Media query para los 2 navbar
     opacity: 0;
     transform: translate(-50%, -50%);
     text-align: center;
-  
-    transition: opacity 1.5s, visibility 1s;
-  }
+    transition: opacity 0.3s, visibility 0.5s;
+    /*width: 80%;*/
+    /*height: 80%;*/
+  }  
   
   .img_wrap:hover .img_description_wht {
     visibility: visible;
@@ -185,6 +184,7 @@ Media query para los 2 navbar
     visibility: visible;
     opacity: 1;
   }
+
 
 /* secciones de proyecto */
 
@@ -214,65 +214,25 @@ Media query para los 2 navbar
 }
 
 /*Hover de los botones de contacto*/
-
 #misredes .btn {
-  background-color:rgba(36, 34, 34, 0.723);
+  background-color:rgba(36, 34, 34, 0.5);
+  border-radius: 2em;
 }
 
 #misredes .fab {
   color: white;
 }
 
+#gogo {
+  transition: 0.3s;
+}
+
+#gogo:hover {
+  opacity:0.5;
+}
+
 #misredes .btn:hover {
   background-color: rgb(0, 0, 0);
-}
-
-
- /* Fondo (lo dicta Rodil)    */
-
- /* Lo del slider */
-.range {
-  --ticksThickness: 2px;
-  --ticksHeight: 30%;
-  --ticksColor: silver;
-
-  display: inline-block;
-  background: silver;
-  background: linear-gradient(
-      to right,
-      var(--ticksColor) var(--ticksThickness),
-      transparent 1px
-    )
-    repeat-x;
-  background-size: calc(100% / ((var(--max) - var(--min)) / var(--step)) - 0.1%)
-    var(--ticksHeight);
-  background-position: 0 bottom;
-  position: relative;
-}
-
-/* min / max labels at the edges */
-.range::before,
-.range::after {
-  font: 12px monospace;
-  content: counter(x);
-  position: absolute;
-  bottom: -2ch;
-}
-
-.range::before {
-  counter-reset: x var(--min);
-  transform: translateX(-50%);
-}
-
-.range::after {
-  counter-reset: x var(--max);
-  /* right: 0; */
-  transform: translateX(50%);
-}
-
-.range > input {
-  width: 300px;
-  margin: 0 -6px; /* Critical adjustment */
 }
 
 /* un hidden para ocultar movidas sin el jquery */
@@ -320,3 +280,22 @@ transition: opacity 0.5s linear;
   border-bottom: 2px solid;
 }
 
+
+/* lo de la fuente pedida */
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: 
+        url('fuente/MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('fuente/MonumentGrotesk-Regular.woff') format('woff'),
+        url('fuente/MonumentGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    font-family: 'Monument Grotesk';
+  }
+
+
+/* Lo de el titulo de proyecto */
+.infoproj  p { display:inline }

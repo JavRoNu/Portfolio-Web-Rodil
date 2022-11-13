@@ -1,0 +1,10 @@
+id: "kim"
+
+titulo: "Kimberley Tell - Papelito"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/431895464" 
+
+info: "- Director: Hector Herce 
+- Prod. company: Kabiria"

@@ -1,0 +1,13 @@
+id: "borbones"
+
+titulo: "Los Borbones: una familia real"
+
+tipo: "Narrative - TV series"
+
+url:  "https://vimeo.com/725691859" 
+
+info: "- Showrunner: Ana Pastor, Aitor Gabilondo   
+- Director: Hector Herce                                            
+- Prod company: Alea Media, Newtral
+- Cinematographer: Alejandro Buera
+- Adittional Cinematographer: Carlos Rodil"

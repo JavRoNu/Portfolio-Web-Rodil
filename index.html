@@ -27,23 +27,6 @@
 
       <!-- Libreria de animaciones con scroll  antes de \body poner js -->
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-       <!-- Choice CDN -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-
-       <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
-
-      <!-- Para alterar los stylos de forma interactiva-->
-      <style id="custom-styles"></style>
-      <style id="add-gf"></style>
-
-        <!-- precargar lo de google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="gfontadd">
-      
   </head>
   <body id = "lgrad">
 
@@ -60,10 +43,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto pe-5">
               <li class="nav-item">
-                <!-- Button desplegable  -->
-                <button class="btn btn-white btn-outline-danger" type="button" id="modificar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Modificar
-                </button>
+                <a class="nav-link navsec" href="about2.html">Reel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navsec" href="allprojects.html">Projects</a>
@@ -77,193 +57,94 @@
       </nav>
 
     <!--Jumbotron superior-->
-                <!-- Desplegable  -->
-                <div class="collapse mb-3" id="collapseExample">
-                  <div class="container-lg border py-3 border-danger" id = "optionmenucon">
-                    <div class="row">
-                      <div class="col">
-                        <h5>Brillo</h5>
-                        <p id=brillo_txt>Cambiar brillo al (50%)</p>
-                        <div class="range" style="--step:5; --min:0; --max:100">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="100" step="5" value="50" id="brillo">
-                        </div>
-                        <p class="pt-5" id=brillo_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambioBrillo()" type="range" min="0" max="2" step="0.1" value="1" id="brillo_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Zoom</h5>
-                        <p id=zoom_txt>Cambio del Zoom (1.1)</p>
-                        <div class="range" style="--step:0.1; --min:1; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="1" max="1.5" step="0.01" value="1.1" id="zoom">
-                        </div>
-                        <p class="pt-5" id=zoom_seg_txt>Duración transición en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiozoom()" type="range" min="0" max="2" step="0.1" value="1" id="zoom_seg">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h5>Texto</h5>
-                        <p id=txtopa_txt>Tiempo hasta aparecer en seg (1)</p>
-                        <div class="range" style="--step:0.1; --min:0; --max:2">
-                          <input onchange="cambiotexto()" type="range" min="0" max="2" step="0.1" value="1.1" id="txtopa">
-                        </div>
-                        <h5 class = "pt-5">Espacio</h5>
-                        <p id=pad_txt>Padding entre imagenes </p>
-                        <div class="range" style="--step:1; --min:1; --max:5">
-                          <input onchange="cambiopadding()" type="range" min="1" max="5" step="1" value="1.1" id="imgpad">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fondo en degradado</h5>
-                      <a href="https://cssgradient.io/">Copia y pega de esta página</a>
-                        <p>Asegurate que este marcado lo de <b>MAX COMPATIBILITY (IE6+)</b></p>
-                        <div class="input-group">
-                          <span class="input-group-text">Pega aquí</span>
-                          <textarea class="form-control" id="fondoDeg" aria-label="With textarea" onchange="cambiofondo()"></textarea>
-                        </div>
-            
-                    </div>
-                    <div class="row pt-5">
-                      <h5>Fuente</h5>
-                      <div class="col">
-                        <p>Seleccionar fuente de <a href="https://fonts.google.com/">google fonts</a></P>
-                        <select class="selectpicker form-control form-select-sm" id="fontselect" placeholder="Busca la fuente.." onchange="mirarCursi()">
-                        </select>
-                      </div>
-                      <div class="col">
-                        <p class="pb-3"> Seleciona el peso de la fuente </p>
-                        <select class="form-select form-select-sm" id="fontwght" aria-label=".form-select-sm example">
-            
-                        </select>
-                      </div>
-            
-                      <div class="col">
-                        <div class="form-check form-switch pb-4">
-                          <input class="form-check-input" type="checkbox" id="cursive" disabled>
-                          <label class="form-check-label" for="cursive">En Cursiva</label>
-                        </div>
-                        <button class="btn btn-primary" type="button" onclick="updateFont()">
-                          Cambiar fuente
-                        </button>
-                      </div>
-                      <div class="col"></div>
-                    </div>
-            
-                  </div>
-                </div>
 
-    <div class="container-lg" id ="jtcontainer">
+    <div class="container-lg w-75 " id ="jtcontainer">
         <div class="ratio ratio-16x9 shadow">
-            <iframe src="https://player.vimeo.com/video/478728673?autoplay=1&loop=1&muted=1" frameborder="0"
+            <iframe src="https://player.vimeo.com/video/718607181?autoplay=0&loop=1&muted=0&portrait=0" frameborder="0"
               allow="autoplay; fullscreen"  allowfullscreen></iframe>
         </div>
     </div>
 
      <!---Grid dos columnas para proyectos-->
-     <div class = "container-lg pt-5 mt-2" id ="projsec">
+     <div class = "container pt-5 mt-2 ml-2 mr-2" id ="projsec">
       <div class = "row">
-          <div class = "col-md p-2" >
+          <div class = "col-md p-3" >
             <div class="img-ho img_wrap_c ratio ratio-16x9" data-aos="fade-up">
-              <a href="proyecto1.html">
-                <img src="media/thumbs/1_169_res.jpg" class = "img-fluid">
+              <a href="projects/kim.html">
+                <img src="media/kim/kim_thumb_res.jpg" class = "img-fluid">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 1 </p>
-                  <p class = "fs-5 fst-italic">Music</p>
+                  <p class = "fs-4">Kimberley Tell - Papelito</p>
+                  <p class = "fs-5 fst-italic">Music video</p>
                 </div>
               </a>
             </div>
           </div>
-          <div class = "col-md p-2" >
+          <div class = "col-md p-3" >
             <div class="img-ho img_wrap_c ratio ratio-16x9" data-aos="fade-up">
-              <a href="proyecto1_lz.html">
-                <img src="media/thumbs/2_169_res.jpg"class = "img-fluid">
+              <a href="projects/mundos.html">
+                <img src="media/mundos/mundos_thumb_res.jpg"class = "img-fluid">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 1 lazy Load</p>
-                  <p class = "fs-5 fst-italic">Commercial</p>
+                  <p class = "fs-4">MUNDOS | Cinematography Reel</p>
+                  <p class = "fs-5 fst-italic">Narrative - shortfilm</p>
                 </div>
               </a>
             </div>
           </div>
-        </div><div class = "row">
-          <div class = "col-md p-2" >
+        </div>
+        <div class = "row">
+          <div class = "col-md p-3" >
             <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-              <a href="proyecto2.html">
-                <img src="media/thumbs/3_169_res.jpg" class = "img-fluid"  loading="lazy">
+              <a href="projects/lorente.html">
+                <img src="media/lorente/lorente_thumb_res.jpg" class = "img-fluid"  loading="lazy">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 2</p>
-                  <p class = "fs-5 fst-italic"> Narrative </p>
+                  <p class = "fs-4">Jaime Lorente - Mirando al Sol</p>
+                  <p class = "fs-5 fst-italic"> Music video </p>
                 </div>
               </a>
             </div>
           </div>
-          <div class = "col-md p-2" >
+          <div class = "col-md p-3" >
             <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-              <a href="proyecto2_lz.html">
-                <img src="media/thumbs/4_169_res.jpg" class = "img-fluid"  loading="lazy">
+              <a href="projects/marem.html">
+                <img src="media/marem/marem_thumb_res.jpg" class = "img-fluid"  loading="lazy">
                 <div class="img_description_wht">
-                  <p class = "fs-4">Galeria 2 lazy load</p>
-                  <p class = "fs-5 fst-italic"> Music </p>
+                  <p class = "fs-4">Marem Ladson - Back To The Sea</p>
+                  <p class = "fs-5 fst-italic"> Music video </p>
                 </div>
               </a>
             </div>
           </div>
      </div>
-    <div class = "row">
-      <div class = "col-md p-2" >
+    <div class = "row"> 
+      <div class = "col-md p-3" >
         <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-          <a href="proyecto3.html">
-            <img src="media/thumbs/5_169_res.jpg" class = "img-fluid" loading="lazy">
+          <a href="projects/locos.html">
+            <img src="media/locos/locos_thumb_res.jpg" class = "img-fluid" loading="lazy">
             <div class="img_description_wht">
-              <p class = "fs-4">Galeria 3</p>
-              <p class = "fs-5 fst-italic"> Narrative </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class = "col-md p-2" >
-        <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-          <a href="proyecto3_lz.html">
-            <img src="media/thumbs/6_169_res.jpg" class = "img-fluid" loading="lazy">
-            <div class="img_description_wht">
-              <p class = "fs-4">Galeria 3 lazy load</p>
-              <p class = "fs-5 fst-italic"> Music </p>
+              <p class = "fs-4">ODLIQUOR - Locos</p>
+              <p class = "fs-5 fst-italic"> Music video </p>
             </div>
           </a>  
         </div>
       </div>
- </div>
-<div class = "row">
-  <div class = "col-md p-2" >
-    <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-      <a href="proyecto4.html">
-        <img src="media/thumbs/7_169_res.jpeg" class = "img-fluid" loading="lazy">
-        <div class="img_description_wht">
-          <p class = "fs-4">Galeria 4</p>
-          <p class = "fs-5 fst-italic"> Narrative </p>
+      <div class = "col-md p-3" >
+        <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
+          <a href="projects/borbones.html">
+            <img src="media/borbones/borbones_thumb_res.jpeg" class = "img-fluid" loading="lazy">
+            <div class="img_description_wht">
+              <p class = "fs-4">Los Borbones: una familia real</p>
+              <p class = "fs-5 fst-italic"> Narrative - TV series </p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
-  </div>
-  <div class = "col-md p-2" >
-    <div class="img-ho img_wrap_c ratio ratio-16x9"data-aos="fade-up">
-      <a href="proyecto4_lz.html">
-        <img src="media/thumbs/11_169_res.jpg" class = "img-fluid">
-        <div class="img_description_wht">
-          <p class = "fs-4">Galeria 4 lazy load</p>
-          <p class = "fs-5 fst-italic"> Music </p>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
 </div>
 
     <!-- Footer con RRSS -->
     <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
       <div class="d-flex justify-content-center">
+        <div id = "gogo">
       <a class="shadow btn btn-white"
        href="https://vimeo.com/carlosrodil"
         role="button"><i class="fab fa-vimeo-v"></i>
@@ -276,6 +157,7 @@
           href="https://www.imdb.com/name/nm7492357/"
            role="button"><i class="fab fa-imdb"></i>
         </a>
+        </div>
       </div>
     </div>
 

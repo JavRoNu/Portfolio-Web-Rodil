@@ -1,0 +1,10 @@
+id: "anaju"
+
+titulo: "Anaju - Ese o Ese"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/478728673" 
+
+info: "- Director: Max Lusson 
+- Prod. company: Vitamina"

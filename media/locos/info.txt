@@ -1,0 +1,9 @@
+id: "locos"
+
+titulo: "ODDLIQUOR - Locos"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/386715614" 
+
+info: "- Director: Max Lusson"

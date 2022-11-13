@@ -1,0 +1,9 @@
+id: "lovebomb"
+
+titulo: "Brotha CJ - Love Bomb (Dattie Capelli, Kasem)"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/377432305" 
+
+info: "- Director: Max Lusson"

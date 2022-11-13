@@ -1,0 +1,10 @@
+id: "lorente"
+
+titulo: "Jaime Lorente - Mirando al Sol"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/555740520" 
+
+info: "- Director: Max Lusson 
+- Prod. company: Vitamina"

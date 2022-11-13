@@ -1,0 +1,12 @@
+id: "elite"
+
+titulo: "ELITE TEASER (Director’s cut)"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/716325739" 
+
+info: "- Director: Nur Casadevall
+- Prod. company: CANADA
+- Cinematographer: Elías M. Félix
+- 16MM / Minidv Unit cinematographer: Carlos Rodil"

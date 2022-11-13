@@ -1,0 +1,10 @@
+id: "baywaves"
+
+titulo: "Baywaves ft. Megansito el Guapo - Drip"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/528058691" 
+
+info: "- Director: Hector Herce
+- Prod. company: Vitamina"
