@@ -7,8 +7,8 @@ import codecs
 # variables de entorno
 eldir = sys.argv[1]
 
-if eldir.endswith("/") != True:
-    eldir = eldir + "/"
+#if eldir.endswith("/") != True:
+#    eldir = eldir + "/"
 
 allfiles = os.listdir(eldir)
 
@@ -45,7 +45,7 @@ for i in file:
     if i != "\n": keep.append(i)
 
 end = "".join(keep)
-print(end)
+#print(end)
 end = re.findall('["-]{1}(.*?)["\\n]{1}',end)
 
 # extraer datos de .txt
@@ -85,6 +85,7 @@ position = sorted(range(len(numbers)),key=numbers.__getitem__)
 
 lasfotos =  [lasfotos[i] for i in position]
 
+# <div class = "col-md p-3" data-aos="fade-up">
 singlepic = """
           <div class = "col-md p-3" data-aos="fade-up">
             <img src="{0}"class = "img-fluid" loading="lazy">
@@ -96,6 +97,63 @@ for i in range(0,len(lasfotos)):
      htmlfotos.append(singlepic.format("../media/"+id+"/"+lasfotos[i]))
     
 htmlfotos = "".join(htmlfotos)
+
+
+# BOTONES PREVIOUS NEXT
+orden = open("./pyscripts/projorder.txt","r",encoding="utf-8")
+
+orden = orden.readlines()
+
+orden = [s.rstrip("\n") for s in orden]
+
+orderpos = orden.index(id)
+
+prev = orderpos -1
+next = orderpos + 1
+
+if prev <= 0:
+    prev = """
+      <div class="container-lg pt-3" id = "prenext">
+        <div class="d-flex justify-content-center">
+        <a class="btn btn-white dissabled"
+            href="#"
+            role="button">< PREV
+        </a>
+    """
+else:
+    prev = """
+      <div class="container-lg pt-3" id = "prenext">
+        <div class="d-flex justify-content-center">
+        <a class="btn btn-white"
+            href="{0}.html"
+            role="button">< PREV
+        </a>
+    """
+    prev = prev.format(orden[orderpos-1])
+    
+    
+if next >= len(orden):
+    next = """
+          <a class=" btn btn-white disabled"
+            href="#" 
+            role="button">NEXT >
+          </a>
+        </div>
+      </div>
+    """
+else:
+    next = """
+          <a class=" btn btn-white"
+            href="{0}.html" 
+            role="button">NEXT >
+          </a>
+        </div>
+      </div>
+    """
+    next = next.format(orden[orderpos+1])
+
+
+    
 
 # BLOQUES HTML
 header = """<!DOCTYPE html>
@@ -134,23 +192,22 @@ header = """<!DOCTYPE html>
     <!-- Barra de navegación superior-->
     <nav class="navbar navbar-light navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 mt-3"href="../index.html">
-              <div class = "carlosRodil">Carlos Rodil</div>
-              <div class = "cinemato">CINEMATOGRAPHER</div>
+          <a class="navbar-brand ms-md-5 mt-1"href="../index.html">
+            <img src="../media/rodilogo1_low_gray.svg" alt="" class="img-fluid" id = "mainlogo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto pe-5">
+            <ul class="navbar-nav ms-auto pe-md-5">
               <li class="nav-item">
-                <a class="nav-link navsec" href="../reel.html">Reel</a>
+                <a class="nav-link navsec" href="../allprojects.html">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="../allprojects.html">Projects</a>
+                <a class="nav-link navsec" href="../reel.html">REEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="../about.html">About</a>
+                <a class="nav-link navsec" href="../about.html">ABOUT</a>
               </li>
             </ul>
           </div>
@@ -159,18 +216,18 @@ header = """<!DOCTYPE html>
       
 formatinfo = """
     <!--Jumbotron superior-->
-    <div class="container-lg" id ="jtcontainer">
+    <div class="container-lg pt-4" id ="jtcontainer">
         <div class="ratio ratio-16x9 shadow">
             <iframe src="https://player.vimeo.com/video/{0}?autoplay=0&loop=1&muted=0&portrait=0" frameborder="0"
               allow="fullscreen"  allowfullscreen></iframe>
         </div>
     </div>
     <!-- info relevante -->
-    <div class="container-fluid pb-5 pt-5 pl-3 pr-3" data-aos="fade-up">
+    <div class="container-fluid pb-1 pt-5 pl-3 pr-3" data-aos="fade-up">
         <div class="text-start infoproj">
             <div class="pb-4">
-              <p class ="fw-bold fs-2"> {1} </p>
-              <p class = "mx-3"> | {2}</p>
+              <span class ="fw-bold" id="titpro"> {1} </span>
+              <span class = "mx-md-3" id ="typepro"> | {2}</span>
             </div>
             <ul class="list-unstyled">
             {3}
@@ -226,7 +283,7 @@ footer = """
 
 # Hacer el formating y juntar todo 
 formatinfo = formatinfo.format(vimeoid,titulo,tipo,listainfo,htmlfotos)
-allin = [header,formatinfo,footer]
+allin = [header,formatinfo,prev,next,footer]
 allin = "\n".join(allin)
 
 # crear o abrir HTML y escribir

@@ -29,28 +29,27 @@
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       
   </head>
-  <body id = "lgrad">
+  <body id = "lgrad" style="background-color: #f7f3e4;">
 
     <!-- Barra de navegación superior-->
-    <nav class="navbar navbar-light navbar-expand-sm">
+    <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #f7f3e4;">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 mt-3"href="../index.html">
-              <div class = "carlosRodil">Carlos Rodil</div>
-              <div class = "cinemato">CINEMATOGRAPHER</div>
+          <a class="navbar-brand ms-md-5 mt-1"href="../index.html">
+            <img src="../media/rodilogo1_low_gray.svg" alt="" class="img-fluid" id = "mainlogo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto pe-5">
+            <ul class="navbar-nav ms-auto pe-md-5">
               <li class="nav-item">
-                <a class="nav-link navsec" href="../reel.html">Reel</a>
+                <a class="nav-link navsec" href="../allprojects.html">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="../allprojects.html">Projects</a>
+                <a class="nav-link navsec" href="../reel.html">REEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="../about.html">About</a>
+                <a class="nav-link navsec" href="../about.html">ABOUT</a>
               </li>
             </ul>
           </div>
@@ -58,18 +57,18 @@
       </nav>
 
     <!--Jumbotron superior-->
-    <div class="container-lg" id ="jtcontainer">
+    <div class="container-lg pt-4" id ="jtcontainer">
         <div class="ratio ratio-16x9 shadow">
             <iframe src="https://player.vimeo.com/video/725691859?autoplay=0&loop=1&muted=0&portrait=0" frameborder="0"
               allow="fullscreen"  allowfullscreen></iframe>
         </div>
     </div>
     <!-- info relevante -->
-    <div class="container-fluid pb-5 pt-5 pl-3 pr-3" data-aos="fade-up">
+    <div class="container-fluid pb-1 pt-5 pl-3 pr-3" data-aos="fade-up">
         <div class="text-start infoproj">
             <div class="pb-4">
-              <p class ="fw-bold fs-2"> Los Borbones: una familia real </p>
-              <p class = "mx-3"> | Narrative - TV series</p>
+              <span class ="fw-bold" id="titpro"> Los Borbones: una familia real </span>
+              <span class = "mx-md-3" id ="typepro"> | Narrative - TV series</span>
             </div>
             <ul class="list-unstyled">
             <li>Showrunner: Ana Pastor, Aitor Gabilondo</li><li>Director: Hector Herce</li><li>Prod company: Alea Media, Newtral</li><li>Cinematographer: Alejandro Buera</li><li>Adittional Cinematographer: Carlos Rodil</li>
@@ -80,40 +79,56 @@
       <div class="container-lg pt-5">
         <div class="row row-cols-md-2 row-cols-lg-2 d-flex flex-wrap align-items-center">
         
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_1_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_2_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_3_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_4_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_5_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_6_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_7_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="../media/borbones/borbones_8_cror.jpg"class = "img-fluid" loading="lazy">
           </div> 
 
         </div>
       </div>
+
+      <div class="container-lg pt-3" id = "prenext">
+        <div class="d-flex justify-content-center">
+        <a class="btn btn-white"
+            href="marem.html"
+            role="button">< PREV
+        </a>
+    
+
+          <a class=" btn btn-white"
+            href="locos.html" 
+            role="button">NEXT >
+          </a>
+        </div>
+      </div>
+    
 
       <!-- Footer con RRSS -->
       <div class="container-lg pt-5 mt-5 pb-2" id="misredes">

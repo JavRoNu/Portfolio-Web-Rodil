@@ -9,4 +9,4 @@ url:  "https://vimeo.com/716325739"
 info: "- Director: Nur Casadevall
 - Prod. company: CANADA
 - Cinematographer: Elías M. Félix
-- 16MM / Minidv Unit cinematographer: Carlos Rodil"
+- 2nd Unit cinematographer: Carlos Rodil"

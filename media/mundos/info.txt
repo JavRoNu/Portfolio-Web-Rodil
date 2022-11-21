@@ -1,6 +1,6 @@
 id: "mundos"
 
-titulo: "MUNDOS | Cinematography Reel"
+titulo: "MUNDOS"
 
 tipo: "Narrative - shortfilm"
 
