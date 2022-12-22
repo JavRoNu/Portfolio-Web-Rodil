@@ -6,10 +6,8 @@
       <meta name= "viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
       <title>Carlos Rodil Cinematographer</title>
-      
-      <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+ 
+      <link rel="icon" type="image/png" sizes="32x32" href="iconos/CR_favicon.png">
 
             <!--Bootrap 5 descargado y en el repo 
       <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
@@ -25,33 +23,15 @@
       <!-- Lo de fontAwesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <!-- Libreria de animaciones con scroll  antes de \body poner js -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-       <!-- Choice CDN -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-
-       <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
-
-      <!-- Para alterar los stylos de forma interactiva-->
-      <style id="custom-styles"></style>
-      <style id="add-gf"></style>
-
-        <!-- precargar lo de google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="gfontadd">
-      
   </head>
   <body id = "lgrad">
 
     <!-- Barra de navegación superior-->
-    <nav class="navbar navbar-light navbar-expand-sm">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-md-5 mt-1"href="#">
-            <img src="media/rodilogo1_low_gray.svg" alt="" class="img-fluid" id = "mainlogo">
+    <nav class="navbar sticky-top navbar-light navbar-expand-sm">
+        <div class="container-fluid"> 
+          <a class="navbar-brand ms-md-5"href="www.carlosrodil.com">
+            <div id = "carlosRodil">CARLOS RODIL</div>
+            <div id = "cinemato"> CINEMATOGRAPHER</div>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,21 +45,21 @@
                 <a class="nav-link navsec" href="reel.html">REEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="about.html">ABOUT</a>
+                <a class="nav-link navsec active" id = "activenavlink3" href=# >ABOUT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     <!-- info about -->
-    <div class="container-lg pb-5 pt-5 pl-3 pr-3">
+    <div class="container-lg pb-5 pt-5 mt-2 px-3">
         <div class="row">
             <div class="col-md-6">
                 <img src="media/about_profile_res.jpeg" class="img-fluid float-end shadow">
             </div>
             <div class="col-md-6 align-self-center pt-sm-3" id = "personalinfo">
                 <p>Carlos Rodil graduated in cinematography studies at ECAM.<br>
-                  Based in Madrid, Spain.
+                  Based in Madrid, Spain.
                 </p>
                 <p><a href="tel:34661809094"><i class="fab fa-whatsapp"></i> +34 661 809 094</a><br>
                   <a href="mailto:carlosrodil12@gmail.com"><i class="fa fa-envelope"></i> carlosrodil12@gmail.com</a>
@@ -87,37 +67,91 @@
             </div>
         </div>
     </div>
-
-      <!-- Footer con RRSS -->
-      <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
-        <div class="d-flex justify-content-center">
-            <div id = "gogo">
-                <a class="shadow btn btn-white"
-                href="https://vimeo.com/carlosrodil"
-                role="button"><i class="fab fa-vimeo-v"></i>
-                </a>
-                <a class="shadow btn btn-white mx-4"
+            <!-- Footer con RRSS -->
+            <div class="container-lg pt-0 mt-5 pb-2" id="misredes2">
+              <div class="d-flex justify-content-center">
+                <div id = "gogo2">
+              <a class="shadow btn btn-white p-0"
+               href="https://vimeo.com/carlosrodil"
+                role="button">
+                <svg viewBox="0 0 274.67294 274.67294"
+                version="1.1"
+                id="svg_vimeo"
+                width="32"
+                height="32">
+               <circle
+                  id="path914"
+                  cx="137.33647"
+                  cy="137.33647"
+                  r="137.33647" />
+               <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+               <path
+                  d="m 229.52071,94.183465 c -0.83091,18.113195 -13.46028,42.914985 -37.97125,74.405355 -25.30032,32.90287 -46.6955,49.35431 -64.22707,49.35431 -10.843,0 -20.02423,-10.01211 -27.543695,-30.03633 -14.623507,-53.67488 -20.855102,-85.12372 -32.944413,-85.12372 -1.412498,0 -6.273159,2.94963 -14.623507,8.76578 l -8.72424,-11.29997 C 64.923249,81.429448 85.404462,60.491254 98.241572,59.328024 c 14.498858,-1.412497 23.389278,8.516523 26.754338,29.703978 11.92315,75.402428 17.19924,86.785478 38.88523,52.636298 7.76872,-12.29703 11.96467,-21.64445 12.54628,-28.08377 1.99411,-19.068714 -14.87276,-17.780842 -26.29737,-12.87866 9.13969,-29.953234 26.62972,-44.49365 52.42857,-43.662768 19.02716,0.498527 28.04222,12.920188 26.96209,37.140363 z"
+                  id="path926"
+                  style="stroke-width:0.999997;fill:#ffffff" />
+             </svg>
+              </a>
+              <a class="shadow btn btn-white p-0 mx-4"
                 href="https://www.instagram.com/carlos.rodil_/" 
-                role="button"><i class="fab fa-instagram"></i>
+                role="button">
+                <svg
+                  viewBox="0 0 274.67294 274.67294"
+                  version="1.1"
+                  id="svg_instagram"
+                  width="32"
+                  height="32">
+                  <circle
+                    id="path914"
+                    cx="137.33647"
+                    cy="137.33647"
+                    r="137.33647" />
+                  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="m 138.67447,93.78829 c -24.11429,0 -43.564976,19.4507 -43.564976,43.56496 0,24.11422 19.450686,43.56482 43.564976,43.56482 24.1143,0 43.56498,-19.45062 43.56498,-43.56482 0,-24.1143 -19.45068,-43.56499 -43.56498,-43.56496 z m 0,71.88785 c -15.5833,0 -28.32293,-12.70171 -28.32293,-28.3229 0,-15.62119 12.70172,-28.32293 28.32293,-28.32293 15.62121,0 28.32292,12.70168 28.32292,28.32292 0,15.62109 -12.73963,28.32282 -28.32292,28.32291 z m 55.50837,-73.669865 c 0,5.649405 -4.54986,10.161365 -10.16137,10.161365 -5.64941,0 -10.16137,-4.54986 -10.16137,-10.161365 0,-5.61153 4.54987,-10.16139 10.16137,-10.16139 5.61151,0 10.16137,4.54983 10.16137,10.16139 z m 28.85374,10.313035 c -0.64455,-13.611715 -3.75363,-25.668845 -13.72542,-35.602715 -9.93389,-9.93388 -21.99103,-13.04295 -35.60271,-13.72543 -14.02876,-0.79622 -56.07711,-0.79622 -70.10587,0 -13.573766,0.64456 -25.630926,3.75364 -35.602706,13.68751 -9.97179,9.93389 -13.04295,21.99103 -13.72544,35.602715 -0.79623,14.02876 -0.79623,56.07711 0,70.10586 0.64457,13.61151 3.75365,25.66865 13.72544,35.60252 9.97178,9.93388 21.99102,13.04296 35.602706,13.72544 14.02876,0.79622 56.07711,0.79622 70.10587,0 13.61168,-0.64456 25.66882,-3.75364 35.60271,-13.72544 9.93387,-9.93387 13.04295,-21.99101 13.72542,-35.60251 0.79623,-14.02877 0.79623,-56.03919 0,-70.06795 z m -18.12363,85.12024 c -2.95741,7.43144 -8.68266,13.15669 -16.15203,16.15203 -11.18509,4.43611 -37.72598,3.41239 -50.08645,3.41239 -12.36047,0 -38.939289,0.9858 -50.086456,-3.41239 -7.43144,-2.95742 -13.1567,-8.68267 -16.15202,-16.15203 -4.43612,-11.18503 -3.4124,-37.72587 -3.4124,-50.08628 0,-12.36047 -0.98581,-38.93929 3.4124,-50.086465 2.95741,-7.43145 8.68266,-13.1567 16.15202,-16.15201 11.185087,-4.43612 37.725986,-3.41239 50.086456,-3.41239 12.36047,0 38.93927,-0.98581 50.08645,3.41239 7.43146,2.95742 13.1567,8.68266 16.15203,16.15201 4.43612,11.185115 3.4124,37.725975 3.4124,50.086465 0,12.36042 1.02372,38.93916 -3.4124,50.08628 z"
+                    id="path897"
+                    style="fill:#ffffff;stroke-width:1" />
+                </svg>
+              </a>
+                <a class="shadow btn btn-white p-0"
+                  onclick = "showCP()"role="button">
+                    <svg viewBox="0 0 274.67294 274.67294"
+                    version="1.1"
+                    id="svg_imdb"
+                    width = "32"
+                    height = "32">
+                  <circle
+                      id="path914_imdb"
+                      cx="137.33647"
+                      cy="137.33647"
+                      r="137.33647" />
+                  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                      d="m 443.2792,208.28701 h -13.33444 v -51.50832 h 13.33444 z m 24.96691,-27.40363 3.4114,-24.10469 h 17.35688 v 51.50832 h -11.62124 v -34.75125 l -5.02337,34.75125 h -7.98492 l -4.87342,-34.00149 -0.0375,34.00149 h -11.6962 v -51.50832 h 17.28191 c 0.18744,3.11149 1.04966,6.7853 1.61197,11.02143 z m 25.3418,27.40363 v -51.50832 h 9.97177 c 6.37294,0 10.12172,0.33739 12.371,0.89971 2.28676,0.63729 4.0112,1.57449 5.21081,2.96154 1.16212,1.2371 1.91188,2.4742 2.17429,4.49854 0.3374,1.64947 0.52483,4.91091 0.52483,9.82182 v 18.06915 c 0,4.61101 -0.26241,7.68501 -0.71226,9.2595 -0.41237,1.537 -1.16213,2.7741 -2.24928,3.63632 -1.04966,0.89971 -2.39922,1.53701 -4.0112,1.8744 -1.57449,0.2999 -3.97371,0.48734 -7.16018,0.48734 z m 13.30819,-42.69867 v 33.51414 c 1.91188,0 3.11149,-0.37488 3.52386,-0.86222 0.41237,-0.74975 0.67478,-2.84908 0.67478,-6.26047 v -19.98103 c 0,-2.32425 -0.0375,-3.82376 -0.26241,-4.49854 -0.11247,-0.67478 -0.44986,-1.12464 -0.97469,-1.76193 -0.52483,0 -1.537,-0.14995 -2.96154,-0.14995 z m 21.48055,42.69867 v -51.50832 h 12.78336 v 16.45717 c 1.08715,-0.89971 2.28676,-1.83691 3.56134,-2.4742 1.34957,-0.56232 3.29894,-0.89971 4.79845,-0.89971 1.79942,0 3.33642,0.2999 4.61101,0.82473 1.27459,0.56232 2.24927,1.31208 2.99903,2.32425 0.63729,0.97469 1.01217,1.98686 1.16212,2.92405 0.14995,0.97469 -0.075,2.99903 -0.075,6.07304 v 14.47031 c 0,3.07401 0.075,5.36077 -0.29991,6.89777 -0.41236,1.49951 -1.42454,2.84908 -2.92405,3.59883 -1.537,1.46203 -3.33642,1.98686 -5.47323,1.98686 -1.49951,0 -3.44888,-0.33739 -4.76096,-0.9372 -1.31207,-0.67478 -2.51168,-1.68695 -3.59883,-2.99902 l -0.78725,3.26144 z m 16.90702,-7.75999 c 0.26242,-0.67478 0.37488,-2.24927 0.37488,-4.68598 v -13.2707 c 0,-2.09932 -0.11246,-3.56135 -0.41237,-4.19865 -0.26241,-0.71226 -1.38705,-1.01217 -2.17429,-1.01217 -0.74976,0 -1.27459,0.29991 -1.537,0.86222 -0.22493,0.56232 -0.37488,2.02435 -0.37488,4.3486 v 13.64558 c 0,2.28676 0.14995,3.74878 0.44985,4.34859 0.22493,0.63729 0.78725,0.9372 1.537,0.9372 0.82474,0 1.57449,-0.29991 2.13681,-0.97469 z M 566.57678,98.987397 c 5.88559,0.4611 10.75902,5.713153 10.75902,11.951133 V 254.9594 c 0,6.14801 -4.46106,11.39631 -10.57158,11.62124 -0.11247,0 -0.18744,0.33739 -0.2999,0.33739 H 420.92893 c -0.10496,0 -0.20993,-0.33739 -0.31489,-0.0375 -5.89685,-0.52483 -10.47674,-5.17333 -10.88648,-11.32134 l 0.007,-145.42291 c 0.39824,-5.96056 5.17382,-10.755263 11.33683,-11.501273 h 145.24297 c 0.075,0 0.18744,0.34114 0.26242,0.35239 z m -145.50164,3.456383 c -4.22489,0.28116 -7.5913,3.65507 -7.87733,7.92494 V 255.5592 c 0.13983,2.02435 0.99455,3.93623 2.41534,5.36077 1.41705,1.46203 3.30269,2.36173 5.31953,2.51169 h 145.53164 c 4.3111,-0.37488 7.72249,-4.3486 7.72249,-8.47226 V 110.93478 c 0,-2.1518 -0.78724,-4.22113 -2.24927,-5.79562 -1.46202,-1.57824 -3.48637,-2.54168 -5.62318,-2.69538 z"
+                      id="path2-3-2"
+                      style="fill:#ffffff;stroke-width:1" />
+                  <path
+                      d="M 202.21634,56.52325 H 74.5395 c -9.61203,0 -17.4105,7.798455 -17.4105,17.410465 V 201.61057 c 0,9.61202 7.79847,17.41047 17.4105,17.41047 h 127.67684 c 9.61202,0 17.41047,-7.79845 17.41047,-17.41047 V 73.933715 c 0,-9.61201 -7.79845,-17.410465 -17.41047,-17.410465 z M 64.85492,128.05131 h -0.10874 c 0.0363,-0.0362 0.0725,-0.10874 0.10874,-0.14509 z m 27.45777,32.86227 H 80.34298 v -46.35541 h 11.96971 z m 41.05972,0 H 122.96238 V 129.5747 l -4.20752,31.33888 h -7.47202 l -4.42516,-30.64971 v 30.64971 h -10.5188 v -46.35541 h 15.52432 c 1.19698,7.18183 2.17631,14.47244 3.15564,21.72682 l 2.75668,-21.72682 h 15.59689 z m 4.13497,0 v -46.35541 h 8.92287 c 6.38385,0 16.21351,-0.58034 17.77319,7.58083 0.61663,2.75662 0.50781,5.91231 0.50781,8.85029 0,32.10059 4.02618,29.96054 -27.20387,29.92429 z m 58.36139,-10.59139 c 0,5.69468 -0.87054,11.20801 -8.05235,11.20801 -3.26447,0 -5.51333,-1.08816 -7.58081,-3.55465 l -0.68917,2.93803 h -10.80901 v -46.35541 h 11.49818 v 15.12535 c 2.17631,-2.35768 4.3526,-3.33701 7.58081,-3.33701 7.76216,0 8.05235,4.64278 8.05235,10.91781 z m -42.61941,-22.01698 c 0,-3.51839 0.58034,-5.80351 -3.73598,-5.80351 v 30.35954 c 4.42514,0.10888 3.73598,-3.15567 3.73598,-6.67404 z m 31.01241,9.46693 c 0,-1.95868 0.39898,-4.60651 -2.24885,-4.60651 -2.1763,0 -1.77731,3.22818 -1.77731,4.60651 0,0.21763 -0.39899,14.36364 0.39897,16.2135 0.29019,0.58035 0.798,0.87052 1.37834,0.87052 2.82921,0 2.24885,-3.26446 2.24885,-5.22314 z"
+                      id="path29"
+                      style="fill:#ffffff;stroke-width:1" />
+                      </svg>
                 </a>
-                <a class="shadow btn btn-white"
-                    href="https://www.imdb.com/name/nm7492357/"
-                    role="button"><i class="fab fa-imdb"></i>
-                </a>
+                </div>
+              </div>
             </div>
-        </div>
-      </div>
-  
+            <div class="container-sm d-flex justify-content-center visually-hidden" id = "colorpanel">
+              <div class="row" style="max-width: 350px;">
+                    <label for="colorfondo">Seleccione color de fondo:</label>
+                    <input type="color" id="colorfondo" name="colorfondo" value="#ffffff" onchange="changeCOL()">
+                    <p id = "colorhex">Codigo HEX:</p>
+                    <p>Recuerde que puede volver a pulsar el boton de imdb para ocultar este menu</p>
+              </div>
+          </div>
+            
       <!-- Footer con registro -->
     <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
-      <p id ="elcopy">©2022 Carlos Rodil Pardo . All rights reserved. No part of this website may be reproduced without permission.</p>
+      <p id ="elcopy">©2022 Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.</p>
     </div>
-  
-      <!--Para la libreria de animación con scroll-->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>  
+
   
             <!-- Funciones propias en js de modificación etc -->
             <script src="mijava.js"></script>

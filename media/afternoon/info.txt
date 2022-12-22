@@ -7,3 +7,5 @@ tipo: "Narrative - shortfilm"
 url:  "https://vimeo.com/440967290" 
 
 info: "- Director: Hector Herce"
+
+cam:"Shot on Kodak Vision3 50D/7203 16mm"

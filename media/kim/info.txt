@@ -6,5 +6,7 @@ tipo: "Music video"
 
 url:  "https://vimeo.com/431895464" 
 
-info: "- Director: Hector Herce 
-- Prod. company: Kabiria"
+info: "-Director: Hector Herce 
+-Prod. company: Kabiria"
+
+cam: "Shot on ARRI SR3 + Angenieux 7-81mm + Optex 5,5mm + Kodak 250D/7207 S16"

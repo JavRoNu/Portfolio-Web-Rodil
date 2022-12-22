@@ -12,10 +12,14 @@ Media query para los 2 navbar
   font-size: xx-large;
 }
 
+#elcopy{
+  font-size: small;
+}
+
 
 @media(max-width: 790px){
   #elcopy{
-    font-size: small;
+    font-size: x-small;
   }
 
   .infoproj li {
@@ -238,11 +242,20 @@ Media query para los 2 navbar
 }
 
 #gogo {
+  display: flex;
+  align-items: center;
   transition: 0.3s;
 }
 
 #gogo:hover {
   opacity:0.5;
+}
+
+#gogo a {
+display: flex;
+align-items: center;
+min-width: 40px;
+min-height: 40px;
 }
 
 #misredes .btn:hover {
@@ -255,21 +268,12 @@ Media query para los 2 navbar
   display: none;
 }
 
-#modificar{
-  border: white;
-  color:black;
-}
-
-#modificar:hover{
-  background-color: rgba(202, 59, 59, 0.586);
-  color:white;
-}
 
 /* persoanalinfo links del about  */
 
 #personalinfo > p > a{ 
 text-decoration: none;
-color: black;
+color: gray;
 }
 
 #personalinfo > p > a:hover{
@@ -339,4 +343,85 @@ transition: opacity 0.5s linear;
     font-weight: 800;
   }
   
+
+#misredes2 img {
+  border-radius: 50%;
+  border-width: 0px 0px 0px 0px;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+#misredes2 .btn { 
+border-radius: 50%;
+max-width: 32px;
+max-height: 32px;
+}
+
+#gogo2 {
+  transition: 0.3s;
+}
+
+#gogo2:hover {
+  opacity:0.5;
+}
+
+#misredes2 svg:hover circle {
+  fill:rgb(71, 70, 70);
+}
+
+#misredes2 svg circle {
+  fill:rgba(71, 70, 70, 0.5);
+}
+
+
+
+/* de nuevo lo de cinematographer */
+
+#carlosRodil{
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 400;
+  font-size:xx-large;
+  padding: 0px;
+  height: 36px;
+
+  /*font-family:'Times New Roman', Times, serif;*/
+}
+
+#cinemato{
+  padding: 0 0 0 2px;
+  text-align: left;
+  text-transform: capitalize;
+  color: gray;
+  font-size: medium;
+  /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+
+/*quitar reborde azul cuando pulas botones next y prev*/
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.089);
+}
+
+/*modelos de mostrar el navbar button selecionado*/
+
+#activenavlink {
+  color:gray;
+  font-weight: 800;
+}
+
+#activenavlink2 {
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  border-color: gray;
+}
+
+#activenavlink3 {
+  color:gray;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  border-color: gray;
+}
 

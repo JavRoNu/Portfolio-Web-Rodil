@@ -68,6 +68,33 @@ function filterproj(cate) {
 //  }
 
 
+// año copyright
+var ano = new Date().getFullYear()
+document.getElementById("elcopy").innerHTML = `©`+ ano+` Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.`
+
+
+
+
+// Color picker
+
+function showCP() {
+  var colpan = document.getElementById("colorpanel")
+
+  if(colpan.classList.contains("visually-hidden")){
+      colpan.classList.remove("visually-hidden")
+  }else{
+    colpan.classList.add("visually-hidden")
+  }
+}
+
+function changeCOL(){
+  nuevo = document.getElementById("colorfondo").value
+  document.getElementById("colorhex").innerHTML = `Codigo HEX: ${nuevo}`
+  console.log(document.getElementById("lgrad"))
+  document.getElementById("lgrad").style.backgroundColor = nuevo
+  console.log(document.querySelector(".navbar"))
+  document.querySelector(".navbar").style.backgroundColor = nuevo
+}
 
 
 

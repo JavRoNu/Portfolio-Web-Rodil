@@ -1,12 +1,14 @@
 id: "elite"
 
-titulo: "ELITE TEASER (Director’s cut)"
+titulo: "ELITE - TEASER (Director’s cut)"
 
-tipo: "Commercial"
+tipo: "Comercial"
 
 url:  "https://vimeo.com/716325739" 
 
-info: "- Director: Nur Casadevall
-- Prod. company: CANADA
-- Cinematographer: Elías M. Félix
-- 2nd Unit cinematographer: Carlos Rodil"
+info: "-Director: Nur Casadevall
+-Prod. company: CANADA
+-Cinematographer: Elías M. Félix
+-Second Unit Cinematographer: Carlos Rodil"
+
+cam: "Kodak Vision3 500T/7219 16mm"

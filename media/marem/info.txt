@@ -1,10 +1,12 @@
 id: "marem"
 
-titulo: "Marem Ladson - Back To The Sea"
+titulo: "Marem Ladson - Back to the Sea"
 
 tipo: "Music video"
 
 url:  "https://vimeo.com/649443999" 
 
-info: "- Director: Max Lusson 
-- Prod. company: Vitamina"
+info: "-Director: Max Lusson
+-Prod. company: Vitamina"
+
+cam: "Shot on ARRI Amira + Zeiss Standard Primes"

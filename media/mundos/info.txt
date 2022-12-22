@@ -6,5 +6,7 @@ tipo: "Narrative - shortfilm"
 
 url:  "https://vimeo.com/298253540" 
 
-info: "- Director: Max Lusson
-- Prod. company: ECAM"
+info: "-Director: Max Lusson
+-Prod. company: ECAM"
+
+cam: "Shot on ARRI Alexa Mini + Ultrascope Anamorphics"

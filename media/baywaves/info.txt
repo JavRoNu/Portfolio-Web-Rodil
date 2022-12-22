@@ -6,5 +6,7 @@ tipo: "Music video"
 
 url:  "https://vimeo.com/528058691" 
 
-info: "- Director: Hector Herce
-- Prod. company: Vitamina"
+info: "-Director: Hector Herce
+-Prod. company: Vitamina"
+
+cam: "Shot on ARRI SR3 + Angenieux 7-81mm + Optex 5,5mm + Zeiss Superspeed Kodak 500T/7219 S16"

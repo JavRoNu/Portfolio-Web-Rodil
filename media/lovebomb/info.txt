@@ -1,9 +1,11 @@
 id: "lovebomb"
 
-titulo: "Brotha CJ - Love Bomb (Dattie Capelli, Kasem)"
+titulo: "Brotha CJ - Love Bomb"
 
 tipo: "Music video"
 
 url:  "https://vimeo.com/377432305" 
 
-info: "- Director: Max Lusson"
+info: "-Director: Max Lusson"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Highspeed T1.3 + Angenieux 25-250mm"

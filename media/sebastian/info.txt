@@ -6,5 +6,8 @@ tipo: "Music video"
 
 url:  "https://vimeo.com/718607181" 
 
-info: "- Director: Max Lusson 
-- Prod. company: Vitamina/Proserpa"
+info: "-Director: Max Lusson
+-Prod. company: Vitamina/Proserpa"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Highspeed T1.3"
+

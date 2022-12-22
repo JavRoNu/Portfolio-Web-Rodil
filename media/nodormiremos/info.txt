@@ -6,4 +6,6 @@ tipo: "Narrative - shortfilm"
 
 url:  "https://vimeo.com/367784386" 
 
-info: "- Director: Max Lusson"
+info: "-Director: Max Lusson"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Highspeed T1.3"

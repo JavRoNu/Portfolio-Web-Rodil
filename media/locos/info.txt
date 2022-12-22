@@ -6,4 +6,6 @@ tipo: "Music video"
 
 url:  "https://vimeo.com/386715614" 
 
-info: "- Director: Max Lusson"
+info: "-Director: Max Lusson"
+
+cam: "Shot on ARRI Alexa Mini + Leica Summilux-C"

@@ -50,13 +50,14 @@ end = re.findall('["-]{1}(.*?)["\\n]{1}',end)
 
 # extraer datos de .txt
 id,titulo,tipo,url = [end[i] for i in range(4)]
+camera = end[len(end)-1]
 
 # url a vimeoid number
 vimeoid = re.findall("[0-9]{1,99}",url)
 vimeoid = str(vimeoid[0])
 
 # Informacion adicional en lista
-adinfo = [end[i] for i in range(4,len(end))]
+adinfo = [end[i] for i in range(4,len(end)-1)]
 
 for i in range(0,len(adinfo)):
     elstr = adinfo[i]
@@ -66,8 +67,11 @@ for i in range(0,len(adinfo)):
         adinfo[i] = elstr.strip()
         
 listainfo = list()
+
 for i in range(0,len(adinfo)):
-  listainfo.append("<li>"+adinfo[i]+"</li>")
+  go = adinfo[i].split(":")
+  go = go[0]+": "+'<span class = "fw-bold">'+go[1]+ "</span>"
+  listainfo.append("<li>"+go+"</li>")
 
 listainfo = "".join(listainfo)
 
@@ -87,7 +91,7 @@ lasfotos =  [lasfotos[i] for i in position]
 
 # <div class = "col-md p-3" data-aos="fade-up">
 singlepic = """
-          <div class = "col-md p-3" data-aos="fade-up">
+          <div class = "col-md p-3">
             <img src="{0}"class = "img-fluid" loading="lazy">
           </div> 
 """
@@ -165,9 +169,7 @@ header = """<!DOCTYPE html>
       <meta name="description" content="">
       <title>Carlos Rodil Cinematographer</title>
       
-      <link rel="apple-touch-icon" sizes="180x180" href="../iconos/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="../iconos/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="../iconos/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="iconos/CR_favicon.png">
 
       <!--Bootrap 5 descargado y en el repo 
       <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
@@ -182,18 +184,15 @@ header = """<!DOCTYPE html>
 
       <!-- Lo de fontAwesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-      <!-- Libreria de animaciones con scroll  antes de body poner js -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       
   </head>
   <body id = "lgrad">
 
     <!-- Barra de navegación superior-->
-    <nav class="navbar navbar-light navbar-expand-sm">
+    <nav class="navbar sticky-top navbar-light navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand ms-md-5 mt-1"href="../index.html">
-            <img src="../media/rodilogo1_low_gray.svg" alt="" class="img-fluid" id = "mainlogo">
+          <a class="navbar-brand ms-md-5 mt-1"href="href="www.carlsorodil.com">
+            <img src="../media/rodilogo1_low_gray_pl.svg" alt="" class="img-fluid" id = "mainlogo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -216,28 +215,34 @@ header = """<!DOCTYPE html>
       
 formatinfo = """
     <!--Jumbotron superior-->
-    <div class="container-lg pt-4" id ="jtcontainer">
+    <div class="container-lg pt-5 mt-2" id ="jtcontainer">
         <div class="ratio ratio-16x9 shadow">
             <iframe src="https://player.vimeo.com/video/{0}?autoplay=0&loop=1&muted=0&portrait=0" frameborder="0"
               allow="fullscreen"  allowfullscreen></iframe>
         </div>
     </div>
     <!-- info relevante -->
-    <div class="container-fluid pb-1 pt-5 pl-3 pr-3" data-aos="fade-up">
-        <div class="text-start infoproj">
-            <div class="pb-4">
-              <span class ="fw-bold" id="titpro"> {1} </span>
-              <span class = "mx-md-3" id ="typepro"> | {2}</span>
+    <div class="container-lg pb-1 pt-5 pl-3 pr-3">
+        <div class="text-start ml-2">
+            <div class="fs-4 fw-bold">
+            {1} 
             </div>
-            <ul class="list-unstyled">
+            <div class = "pb-2 fst-italic">
+            {2}
+            </div>
+            <ul class="list-unstyled pb-2">
             {3}
             </ul>
+            <div>
+            {4}
+            </div>
+            
         </div>
     </div>
     <!-- Zona imagenes -->
       <div class="container-lg pt-5">
         <div class="row row-cols-md-2 row-cols-lg-2 d-flex flex-wrap align-items-center">
-        {4}
+        {5}
         </div>
       </div>"""
       
@@ -256,33 +261,34 @@ footer = """
               role="button"><i class="fab fa-instagram"></i>
             </a>
               <a class="shadow btn btn-white"
-                href="https://www.imdb.com/name/nm7492357/"
+                onclick = "showCP()"
                 role="button"><i class="fab fa-imdb"></i>
               </a>
           </div>
         </div>
       </div>
+      <div class="container-sm d-flex justify-content-center visually-hidden" id = "colorpanel">
+          <div class="row" style="max-width: 350px;">
+                <label for="colorfondo">Seleccione color de fondo:</label>
+                <input type="color" id="colorfondo" name="colorfondo" value="#ffffff" onchange="changeCOL()">
+                <p id = "colorhex">Codigo HEX:</p>
+                <p>Recuerde que puede volver a pulsar el boton de imdb para ocultar este menu</p>
+          </div>
+      </div>
   
       <!-- Footer con registro -->
     <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
-      <p id ="elcopy">©2022 Carlos Rodil Pardo . All rights reserved. No part of this website may be reproduced without permission.</p>
+      <p id ="elcopy">©2022 Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.</p>
     </div>
-  
-      <!--Para la libreria de animación con scroll-->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>  
-  
             <!-- Funciones propias en js de modificación etc -->
-            <script src="mijava.js"></script>
+            <script src="../mijava.js"></script>
 
  </body>
 </html>"""
 
 
 # Hacer el formating y juntar todo 
-formatinfo = formatinfo.format(vimeoid,titulo,tipo,listainfo,htmlfotos)
+formatinfo = formatinfo.format(vimeoid,titulo,tipo,listainfo,camera,htmlfotos)
 allin = [header,formatinfo,prev,next,footer]
 allin = "\n".join(allin)
 

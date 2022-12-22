@@ -6,5 +6,7 @@ tipo: "Music video"
 
 url:  "https://vimeo.com/683435670" 
 
-info: "- Director: Max Lusson 
-- Prod. company: Vitamina"
+info: "-Director: Max Lusson
+-Prod. company: Vitamina"
+
+cam: "Shot on ARRI Amira + Zeiss Superspeed T1.4"

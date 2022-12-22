@@ -6,8 +6,10 @@ tipo: "Narrative - TV series"
 
 url:  "https://vimeo.com/725691859" 
 
-info: "- Showrunner: Ana Pastor, Aitor Gabilondo   
-- Director: Hector Herce                                            
-- Prod company: Alea Media, Newtral
-- Cinematographer: Alejandro Buera
-- Adittional Cinematographer: Carlos Rodil"
+info: "-Showrunner: Ana Pastor, Aitor Gabilondo
+-Director: Hector Herce
+-Prod company: Alea Media, Newtral
+-Cinematographer: Alejandro Buera
+-Adittional Cinematographer: Carlos Rodil"
+
+cam: "Shot on ARRI Amira + Cooke S4/i - Bolex H16 Kodak 500T/7219 16mm"
