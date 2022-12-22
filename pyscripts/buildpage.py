@@ -191,7 +191,7 @@ header = """<!DOCTYPE html>
     <!-- Barra de navegación superior-->
     <nav class="navbar sticky-top navbar-light navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand ms-md-5 mt-1"href="href="../">
+          <a class="navbar-brand ms-md-5 mt-1" href="../">
             <img src="../media/rodilogo1_low_gray_pl.svg" alt="" class="img-fluid" id = "mainlogo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
