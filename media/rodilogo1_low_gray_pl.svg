@@ -5,9 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="132.15007mm"
-   height="22.097109mm"
-   viewBox="0 0 132.15007 22.097109"
+   width="132.55006mm"
+   height="22.309317mm"
+   viewBox="0 0 132.55006 22.309317"
    version="1.1"
    id="svg8">
   <defs
@@ -45,7 +45,7 @@
   </metadata>
   <g
      id="layer1"
-     transform="translate(-27.258936,-34.818992)">
+     transform="translate(-26.858936,-34.618992)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.05px;line-height:1.25;font-family:'Monument Grotesk';-inkscape-font-specification:'Monument Grotesk';white-space:pre;inline-size:149.337;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"

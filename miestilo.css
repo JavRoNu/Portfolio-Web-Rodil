@@ -49,6 +49,8 @@ Media query para los 2 navbar
     margin-right: 0pt;
   }
 
+
+
 }
 
 @media(max-width: 500px){
@@ -86,7 +88,7 @@ Media query para los 2 navbar
 }
 
 .navbar{
-    background-color: rgb(255, 255, 255)
+    background-color: #fcf7f7;
 
 }
 .navsec{
@@ -420,8 +422,22 @@ max-height: 32px;
 #activenavlink3 {
   color:gray;
   font-weight: 800;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid; 
   padding-bottom: 2px;
   border-color: gray;
 }
 
+@media(max-width: 790px) {
+  #activenavlink3 {
+  color:gray;
+  font-weight: 800;
+  border-bottom: 0px solid; 
+  text-underline-offset: 7px;
+  text-decoration: underline;
+}
+}
+
+
+#lgrad {
+background-color: #fcf7f7;
+}
