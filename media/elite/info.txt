@@ -2,7 +2,7 @@ id: "elite"
 
 titulo: "ELITE - TEASER (Director’s cut)"
 
-tipo: "Comercial"
+tipo: "Commercial"
 
 url:  "https://vimeo.com/716325739" 
 

@@ -1,0 +1,11 @@
+id: "cold"
+
+titulo: "Cold Culture - Vision & Mission FW23"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/852634045" 
+
+info: "- Director: Max Lusson" 
+
+cam: "Shot on Kodak 250D/7207"

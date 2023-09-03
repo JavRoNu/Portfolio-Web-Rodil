@@ -25,11 +25,11 @@ if len(sys.argv) < 3 :
 else:
     if sys.argv[2] == "cr":
         print("Building html with crop and resize")
-        os.system("cropAndResize.py "+ eldir )
+        os.system("/pyscripts/cropAndResize.py "+ eldir )
         
     elif sys.argv[2] == "r":
-        print("Building hmtl with resize")
-        os.system("onlyresize.py "+ eldir )
+        print("Building html with resize")
+        os.system("pyscripts/onlyresize.py "+ eldir )
     else:
         raise NameError('El tipo de procesado es incorrecto, validos:(cr,r)')
 

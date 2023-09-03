@@ -49,5 +49,5 @@ for i in losfiles:
     
     print("Final size: "+str(final_w)+" x "+str(final_h))      
 
-    rs_crop = cv2.resize(crop,(final_w,final_h))
+    rs_crop = cv2.resize(img,(final_w,final_h))
     cv2.imwrite(thefile2[0]+"_cror"+thefile2[1],rs_crop,[cv2.IMWRITE_JPEG_QUALITY, 100])

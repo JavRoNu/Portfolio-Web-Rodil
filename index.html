@@ -1,171 +1,201 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-      <meta charset="UTF-8">
-      <META HTTP-EQUIV = "X-UA-<!doctype html">
-      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <title>Carlos Rodil Cinematographer</title>
+<html lang="en">
 
-      <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+<head>
+  <meta charset="UTF-8">
+  <META HTTP-EQUIV="X-UA-<!doctype html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Carlos Rodil Cinematographer</title>
 
-            <!--Bootrap 5 descargado y en el repo 
+  <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+
+  <!--Bootrap 5 descargado y en el repo 
       <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
       <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
 
-      <!--Bootstrap 5 CDN-->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--Bootstrap 5 CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-      <!-- Mis estilos aparte -->
-      <link rel="stylesheet" href="miestilo.css">
+  <!-- Mis estilos aparte -->
+  <link rel="stylesheet" href="miestilo.css">
 
-      <!-- Lo de fontAwesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Lo de fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <!-- Libreria de animaciones con scroll  antes de \body poner js -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body id = "lgrad"  >
+  <!-- Libreria de animaciones con scroll  antes de \body poner js -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-    <!-- Barra de navegación superior-->
-    <nav class="navbar sticky-top navbar-light navbar-expand-sm">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-md-5 mt-1"href="/">
-            <img src="media/rodilogo1_low_gray_pl2.svg" alt="" class="img-fluid" id = "mainlogo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto pe-md-5">
-              <li class="nav-item">
-                <a class="nav-link navsec" href="allprojects.html">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navsec" href="reel.html">REEL</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navsec" href="about.html">ABOUT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body id="lgrad">
 
-    <!--Jumbotron superior-->      
-
-    <div class="container-lg pt-5 mt-2" id ="jtcontainer">
-        <div class="ratio ratio-16x9 shadow">
-            <iframe src="https://player.vimeo.com/video/718607181?autoplay=0&loop=0&muted=0&portrait=0" frameborder="0"
-              allow="autoplay; fullscreen"  allowfullscreen></iframe>
-        </div>
-    </div>
-
-     <!---Grid dos columnas para proyectos-->
-     <div class = "container pt-5 mt-2 ml-2 mr-2" id ="projsec">
-      <div class = "row">
-          <div class = "col-md p-3" >
-            <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="projects/kim.html">
-                <img src="media/kim/kim_thumb_res.jpg" class = "img-fluid">
-                <div class="img_description_wht">
-                  <p class = "fs-4">Kimberley Tell - Papelito</p>
-                  <p class = "fs-5 fst-italic">Music video</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-md p-3" >
-            <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="projects/mundos.html">
-                <img src="media/mundos/mundos_thumb_res.jpg"class = "img-fluid">
-                <div class="img_description_wht">
-                  <p class = "fs-4">MUNDOS | Cinematography Reel</p>
-                  <p class = "fs-5 fst-italic">Narrative - shortfilm</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "col-md p-3" >
-            <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="projects/lorente.html">
-                <img src="media/lorente/lorente_thumb_res.jpg" class = "img-fluid"  loading="lazy">
-                <div class="img_description_wht">
-                  <p class = "fs-4">Jaime Lorente - Mirando al Sol</p>
-                  <p class = "fs-5 fst-italic"> Music video </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class = "col-md p-3" >
-            <div class="img-ho img_wrap_c ratio ratio-16x9">
-              <a href="projects/marem.html">
-                <img src="media/marem/marem_thumb_res.jpg" class = "img-fluid"  loading="lazy">
-                <div class="img_description_wht">
-                  <p class = "fs-4">Marem Ladson - Back To The Sea</p>
-                  <p class = "fs-5 fst-italic"> Music video </p>
-                </div>
-              </a>
-            </div>
-          </div>
-     </div>
-    <div class = "row"> 
-      <div class = "col-md p-3" >
-        <div class="img-ho img_wrap_c ratio ratio-16x9">
-          <a href="projects/locos.html">
-            <img src="media/locos/locos_thumb_res.jpg" class = "img-fluid" loading="lazy">
-            <div class="img_description_wht">
-              <p class = "fs-4">ODLIQUOR - Locos</p>
-              <p class = "fs-5 fst-italic"> Music video </p>
-            </div>
-          </a>  
-        </div>
-      </div>
-      <div class = "col-md p-3" >
-        <div class="img-ho img_wrap_c ratio ratio-16x9">
-          <a href="projects/borbones.html">
-            <img src="media/borbones/borbones_thumb_res.jpeg" class = "img-fluid" loading="lazy">
-            <div class="img_description_wht">
-              <p class = "fs-4">Los Borbones: una familia real</p>
-              <p class = "fs-5 fst-italic"> Narrative - TV series </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-</div>
-    <!-- Footer con RRSS -->
-    <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
-      <div class="d-flex justify-content-center">
-      <div id = "gogo"> 
-      <a class="shadow btn btn-white"
-       href="https://vimeo.com/carlosrodil"
-        role="button"><i class="fab fa-vimeo-v"></i>
+  <!-- Barra de navegación superior-->
+  <nav class="navbar sticky-top navbar-light navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-md-5 mt-1" href="/">
+        <img src="media/rodilogo1_low_gray_pl2.svg" alt="" class="img-fluid" id="mainlogo">
       </a>
-      <a class="shadow btn btn-white mx-4"
-        href="https://www.instagram.com/carlos.rodil_/" 
-        role="button"><i class="fab fa-instagram"></i>
-      </a>
-        <a class="shadow btn btn-white"
-        href="https://www.imdb.com/name/nm7492357/"
-           role="button" ><i class="fab fa-imdb"></i>
-        </a>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto pe-md-5">
+          <li class="nav-item">
+            <a class="nav-link navsec" href="allprojects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navsec" href="reel.html">REEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navsec" href="about.html">ABOUT</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Footer con registro -->
-  <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
-    <p id ="elcopy">©2022 Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.</p>
+  </nav>
+
+  <!--Jumbotron superior-->
+  <div class="container-lg pt-5 mt-2" id="jtcontainer">
+    <div class="ratio ratio-16x9 shadow">
+      <iframe src="https://player.vimeo.com/video/718607181?autoplay=0&loop=0&muted=0&portrait=0" frameborder="0"
+        allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
   </div>
 
-          <!-- Funciones propias en js de modificación etc -->
-          <script src="mijava.js"></script>
+  <!---Grid dos columnas para proyectos-->
+  <div class="container pt-5 mt-2 ml-2 mr-2" id="projsec">
+    <div class="row">
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/kim.html">
+            <img src="media/kim/kim_thumb_res.jpg" class="img-fluid">
+            <div class="img_description_wht">
+              <p class="fs-4">Kimberley Tell - Papelito</p>
+              <p class="fs-5 fst-italic">Music video</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/mundos.html">
+            <img src="media/mundos/mundos_thumb_res.jpg" class="img-fluid">
+            <div class="img_description_wht">
+              <p class="fs-4">MUNDOS | Cinematography Reel</p>
+              <p class="fs-5 fst-italic">Narrative - shortfilm</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/cold.html">
+            <img src="media/cold/cold_thumb_res.jpg" class="img-fluid">
+            <div class="img_description_wht">
+              <p class="fs-4">Cold Culture - Vision & Mission FW23</p>
+              <p class="fs-5 fst-italic">Commercial</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <img src="media/lorente/lorente_thumb_res.jpg" class="img-fluid">
+          <a href="projects/lorente.html">
+            <div class="img_description_wht">
+              <p class="fs-4">Jaime Lorente - Mirando al Sol</p>
+              <p class="fs-5 fst-italic">Music video</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/marem.html">
+            <img src="media/marem/marem_thumb_res.jpg" class="img-fluid" loading="lazy">
+            <div class="img_description_wht">
+              <p class="fs-4">Marem Ladson - Back To The Sea</p>
+              <p class="fs-5 fst-italic">Music video</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/locos.html">
+            <img src="media/locos/locos_thumb_res.jpg" class="img-fluid" loading="lazy">
+            <div class="img_description_wht">
+              <p class="fs-4">ODDLIQUOR - Locos</p>
+              <p class="fs-5 fst-italic">Music video</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <img src="media/deva/deva_thumb_res.jpg" class="img-fluid">
+          <a href="projects/deva.html">
+            <div class="img_description_wht">
+              <p class="fs-4">Deva - Borracha</p>
+              <p class="fs-5 fst-italic">Music video</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md p-3">
+        <div class="img-ho img_wrap_c ratio ratio-16x9">
+          <a href="projects/borbones.html">
+            <img src="media/borbones/borbones_thumb_res.jpeg" class="img-fluid" loading="lazy">
+            <div class="img_description_wht">
+              <p class="fs-4">Los Borbones: una familia real</p>
+              <p class="fs-5 fst-italic"> Narrative - TV series </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer con RRSS -->
+  <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
+    <div class="d-flex justify-content-center">
+      <div id="gogo">
+        <a class="shadow btn btn-white" href="https://vimeo.com/carlosrodil" role="button"><i
+            class="fab fa-vimeo-v"></i>
+        </a>
+        <a class="shadow btn btn-white mx-4" href="https://www.instagram.com/carlos.rodil_/" role="button"><i
+            class="fab fa-instagram"></i>
+        </a>
+        <a class="shadow btn btn-white" href="https://www.imdb.com/name/nm7492357/" role="button"><i
+            class="fab fa-imdb"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Footer con registro -->
+  <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
+    <p id="elcopy">©2022 Carlos Rodil . All rights reserved. No part of this website may be reproduced without
+      permission.</p>
+  </div>
 
-      
-  </body>
+  <!-- Funciones propias en js de modificación etc -->
+  <script src="mijava.js"></script>
+
+
+</body>
+
 </html>
