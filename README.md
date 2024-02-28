@@ -2,6 +2,8 @@
 
 Repo hosting [https://carlosrodil.com](https://carlosrodil.com)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/807748ce-5297-4f41-9f68-799fe958e4ca/deploy-status)](https://app.netlify.com/sites/carlosrodil/deploys)
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
