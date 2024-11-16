@@ -88,7 +88,7 @@ Media query para los 2 navbar
 }
 
 .navbar{
-    background-color: #fcf7f7;
+    background-color: #ffffff;
 
 }
 .navsec{
@@ -303,6 +303,7 @@ transition: opacity 0.5s linear;
 
 
 /* lo de la fuente pedida */
+/* primera fuente antes de nov24
 @font-face {
     font-family: 'Monument Grotesk';
     src: 
@@ -316,7 +317,21 @@ transition: opacity 0.5s linear;
   body{
     font-family: 'Monument Grotesk';
   }
+*/
+@font-face {
+    font-family: 'Neue Hass';
+    src: 
+        /*url('fuente/MonumentGrotesk-Regular.woff2') format('woff2'),*/
+        /*url('fuente/MonumentGrotesk-Regular.woff') format('woff'), */
+        url('fuente/NeueHaasDisplayLight.ttf') format('truetype'),
+        url('fuente/NeueHaasDisplayLightItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
+  body{
+    font-family: 'Neue Hass';
+  }  
 
 /* Lo de el titulo de proyecto */
 /* .infoproj  p { display:inline } */
@@ -439,5 +454,5 @@ max-height: 32px;
 
 
 #lgrad {
-background-color: #b1f1bb;
+background-color: #ffffff;
 }

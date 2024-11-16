@@ -1,0 +1,13 @@
+id: "terapia"
+
+titulo: "Stivijoes ft. Xavibo - Terapia"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/930387923" 
+
+info: "-Director: Max Lusson
+-Prod. company: Proserpa"
+
+cam: "Shot on Kodak 16mm 250D/7207 16mm"
+

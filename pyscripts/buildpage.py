@@ -25,11 +25,11 @@ if len(sys.argv) < 3 :
 else:
     if sys.argv[2] == "cr":
         print("Building html with crop and resize")
-        os.system("/pyscripts/cropAndResize.py "+ eldir )
+        os.system('/pyscripts/cropAndResize.py  "'+ eldir +'"' )
         
     elif sys.argv[2] == "r":
         print("Building html with resize")
-        os.system("pyscripts/onlyresize.py "+ eldir )
+        os.system("/pyscripts/onlyresize.py "+ eldir )
     else:
         raise NameError('El tipo de procesado es incorrecto, validos:(cr,r)')
 
@@ -77,7 +77,7 @@ listainfo = "".join(listainfo)
 
 # screens del proyecto 
 fotos = os.listdir(eldir)
-p = re.compile("[0-9]{1,2}_cror.jpg$")
+p = re.compile("[0-9]{1,2}_cror(.jpg|.png|.jpeg)$")
 lasfotos = [ s for s in fotos if p.search(s) ]
 
 # ordenando por número
@@ -115,7 +115,7 @@ orderpos = orden.index(id)
 prev = orderpos -1
 next = orderpos + 1
 
-if prev <= 0:
+if prev < 0:
     prev = """
       <div class="container-lg pt-3" id = "prenext">
         <div class="d-flex justify-content-center">
@@ -193,16 +193,16 @@ header = """<!DOCTYPE html>
     <!-- Barra de navegación superior-->
     <nav class="navbar sticky-top navbar-light navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand ms-md-5 mt-1" href="/">
+          <div class="navbar-brand ms-md-5 mt-1">
             <img src="../media/rodilogo1_low_gray_pl2.svg" alt="" class="img-fluid" id = "mainlogo">
-          </a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto pe-md-5">
               <li class="nav-item">
-                <a class="nav-link navsec" href="../allprojects.html">PROJECTS</a>
+                <a class="nav-link navsec" href="../index.html">PROJECTS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navsec" href="../reel.html">REEL</a>
@@ -271,7 +271,7 @@ footer = """
       </div>
       <!-- Footer con registro -->
     <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
-      <p id ="elcopy">©2022 Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.</p>
+      <p id ="elcopy">©2024.</p>
     </div>
             <!-- Funciones propias en js de modificación etc -->
             <script src="../mijava.js"></script>

@@ -70,7 +70,7 @@ function filterproj(cate) {
 
 // año copyright
 var ano = new Date().getFullYear()
-document.getElementById("elcopy").innerHTML = `©`+ ano+` Carlos Rodil . All rights reserved. No part of this website may be reproduced without permission.`
+document.getElementById("elcopy").innerHTML = `© `+ ano+` `
 
 
 

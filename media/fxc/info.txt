@@ -1,0 +1,11 @@
+id:"fxc"
+
+titulo:"Roads Unfold - Ford x Cold Culture"
+
+tipo:"Comercial"
+
+url:"https://vimeo.com/852634045" 
+
+info:"- Director: Max Lusson" 
+
+cam:"Shot on ARRI Alexa Mini + Zeiss Super Speed T1.3 + Angénieux HR 25-250mm"

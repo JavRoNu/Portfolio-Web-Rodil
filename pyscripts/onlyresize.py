@@ -12,7 +12,7 @@ if eldir.endswith("/") != True:
 
 allfiles = os.listdir(eldir)
 
-p = re.compile("[0-9]{1,2}.jpg$")
+p = re.compile("[0-9]{1,2}(.jpg|.png|.jpeg)$")
 
 losfiles = [ s for s in allfiles if p.search(s) ]
 

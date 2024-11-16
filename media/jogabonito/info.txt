@@ -1,0 +1,12 @@
+id: "jogabonito"
+
+titulo: "Barry B - Joga Bonito / Barry B, Carolina Durante - YPQMHTD"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/945526271" 
+
+info: "Director: Jean Lafleur"
+
+cam: "Shot on Kodak 250D/7207"
+

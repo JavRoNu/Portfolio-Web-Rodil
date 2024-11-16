@@ -1,0 +1,13 @@
+id: "tarantino"
+
+titulo: "Pol Granch ft. Gale - Tarantino"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/1025957739" 
+
+info: "-Director: Max Lusson
+-Prod. company: Proserpa"
+
+cam: "Shot on ARRI Alexa Mini + Cooke S4/i"
+

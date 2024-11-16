@@ -1,0 +1,12 @@
+id: "bigscape"
+
+titulo: "Cold Culture - The Big Scape"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1025959919" 
+
+info: "Director: Max Lusson"
+
+cam: "Shot on ARRI Amira + Zeiss Super Speed T1.3"
+

@@ -1,0 +1,12 @@
+id: "evade"
+
+titulo: "Evade House – Undressing the Spirits"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/976858278" 
+
+info: "-Director: David Heofs
+-Prod. company: Bandiz Studio"
+
+cam: "Shot on ARRI Amira + Zeiss Super Speed T1.3 + Angénieux HR 25-250mm"

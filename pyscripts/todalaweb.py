@@ -4,22 +4,22 @@ import re
 
 # toma como base el directorio de ejcución
 # recuerda adaptar rutas en os.system(...
-mediapro = os.listdir("media")
-p = re.compile(".jpeg$")
 
-losfiles = [ i for i in mediapro if not p.search(i) ]
 
-p = re.compile(".svg$")
+# solo los proyectos que esten en ejecución
+orden = open("./pyscripts/projorder.txt","r",encoding="utf-8")
 
-losfiles = [ i for i in losfiles if not p.search(i) ]
+orden = orden.readlines()
 
+orden = [s.rstrip("\n") for s in orden]
 
 thumb = False
 html = True
 
+# no funciona por que se ñadieron formatos nuevos png jpeg
 if thumb == True:
     print("Creating thumbnails")
-    for i in losfiles:
+    for i in orden:
         print("Working on "+i)
         inside = "media/"+ i + "/"+i+"_thumb.jpg"
         os.system("/pyscripts/ResizeThumb.py " + inside + " 652 366")
@@ -28,7 +28,7 @@ if thumb == True:
 
 if html == True:    
     print("Rebuilding htmls")
-    for i in losfiles: 
+    for i in orden: 
         inside = "media\\"+ i  
         print("\n----------------------\n")
         os.system("pyscripts\\buildpage.py  " + inside )

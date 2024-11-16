@@ -1,0 +1,13 @@
+id: "titiritar"
+
+titulo: "Pol Granch - Titiritar"
+
+tipo: "Music Video"
+
+url:  "https://vimeo.com/947767249" 
+
+info: "-Director: Max Lusson
+-Prod. company: Supersonic"
+
+cam: "Shot on ARRI Amira + Zeiss Super Speed T1.3"
+

@@ -1,0 +1,12 @@
+id: "depresion"
+
+titulo: "Visualizers for Depresión Sonora's EP Makinavaja"
+
+tipo: "Music video"
+
+url:  "https://vimeo.com/1029094343" 
+
+info: "-Director: Max Lusson
+-Prod. company: Shody"
+
+cam: "Shot on Kodak 500T/5219 16mm"

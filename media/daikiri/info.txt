@@ -1,0 +1,12 @@
+id: "daikiri"
+
+titulo: "Aissa ft. Omar Montes - Daikiri"
+
+tipo: "Music Video"
+
+url:  "https://vimeo.com/990644755" 
+
+info: "-Director: Jorge No & Revs
+-Prod. company: Take a Nap"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Super Speed T1.3 + Canon FD 14mm +  Angénieux 24-290mm Optimo"

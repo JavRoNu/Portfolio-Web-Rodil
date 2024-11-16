@@ -34,13 +34,14 @@ py (pyscript.py) arg1 arg2 ....
 - reparing.py: script made for projects or images that fail in the croping procces, uses alternative method.
   - arg1: id of the project -> "(id)"
 - todalaweb.py: lists all projects in media and calls buildpage.py or ResizeThumb.py to rebuilt the whole projects section using the template contained in buildpage. Non exectuable design Ajdust variables thumb and html lines 17,18
+- buildprojects.py: build the index page given the project order specified in projorder.txt
 
 ## Updating
 
 - Add project folder with thumbnail, stills, and ``info.txt``
-- Add project_id to ```pyscripts/projorder.txt``` in the desired position
+- Add project_id to ```pyscripts/projorder.txt``` in the desired position.
 - Use ```ResizeThumb.py``` and delete original.
 - Use ```buildpage.py``` with "cr" o "r" as de second argument.
+- Remove old stills.
 - If you dont want to rebuild the whole page with ```todalweb.py``` change previous and next links manually.
-- Update manually the ```projects.html```.
-- If necessary update manually the ```index.html```.
+- Update the ```index.html``` with ```buildprojects.py```.
