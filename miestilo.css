@@ -437,9 +437,10 @@ max-height: 32px;
 #activenavlink3 {
   color:gray;
   font-weight: 800;
-  border-bottom: 2px solid; 
   padding-bottom: 2px;
-  border-color: gray;
+  text-decoration: underline;
+  text-decoration-color: gray;
+  text-underline-offset: 4px;
 }
 
 @media(max-width: 790px) {

@@ -218,7 +218,7 @@ header = """<!DOCTYPE html>
 formatinfo = """
     <!--Jumbotron superior-->
     <div class="container-lg pt-5 mt-2" id ="jtcontainer">
-        <div class="ratio ratio-16x9 shadow">
+        <div class="ratio ratio-16x9">
             <iframe src="https://player.vimeo.com/video/{0}?autoplay=0&loop=0&muted=0&portrait=0" frameborder="0"
               allow="fullscreen"  allowfullscreen></iframe>
         </div>
