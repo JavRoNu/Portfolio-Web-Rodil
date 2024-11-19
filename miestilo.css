@@ -457,3 +457,7 @@ max-height: 32px;
 #lgrad {
 background-color: #ffffff;
 }
+
+#personalinfo {
+  word-spacing: 2px;
+}
