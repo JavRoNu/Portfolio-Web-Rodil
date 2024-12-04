@@ -160,7 +160,7 @@ else:
     
 
 # BLOQUES HTML
-header = """<!DOCTYPE html>
+head = """<!DOCTYPE html>
 <html lang = "en">
   <head>
       <meta charset="UTF-8">
@@ -169,9 +169,9 @@ header = """<!DOCTYPE html>
       <meta name="description" content="">
       <title>Carlos Rodil Cinematographer</title>
       
-      <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../iconos/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../iconos/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../iconos/favicon-16x16.png">
 
       <!--Bootrap 5 descargado y en el repo 
       <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
@@ -282,7 +282,7 @@ footer = """
 
 # Hacer el formating y juntar todo 
 formatinfo = formatinfo.format(vimeoid,titulo,tipo,listainfo,camera,htmlfotos)
-allin = [header,formatinfo,prev,next,footer]
+allin = [head,formatinfo,prev,next,footer]
 allin = "\n".join(allin)
 
 # crear o abrir HTML y escribir
