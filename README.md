@@ -26,7 +26,7 @@ py (pyscript.py) arg1 arg2 ....
 - cropAndResize.py: crops and resizes project´s images to the desired width and height (dwidth l85,dheight l86) keeping the aspect ratio.
   - arg1:  project to build -> "media/(projid)"
 - ResizeTHumb.py: resizes thumbnail given width and height.
-  - arg1: file to tranform -> "media/(projid)/(projid)_thumb.jpg
+  - arg1: file to tranform -> "media/(projid)/(projid)_thumb.jpg"
   - arg2: desired min width -> 652
   - arg3: desired min height -> 366
 - onlyresize.py: resize projects´s images to the desired width and height keeping the aspect ratio.
@@ -41,7 +41,7 @@ py (pyscript.py) arg1 arg2 ....
 - Add project folder with thumbnail, stills, and ``info.txt``
 - Add project_id to ```pyscripts/projorder.txt``` in the desired position.
 - Use ```ResizeThumb.py``` and delete original.
-- Use ```buildpage.py``` with "cr" o "r" as de second argument.
+- Use ```buildpage.py``` with "cr" o "r" as de second argument. ( if "cr" clean old stills and then build html only)
 - Remove old stills.
-- If you dont want to rebuild the whole page with ```todalweb.py``` change previous and next links manually.
+- If you dont want to rebuild the whole page with ```todlaweb.py``` change previous and next links manually.
 - Update the ```index.html``` with ```buildprojects.py```.

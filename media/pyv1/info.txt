@@ -1,0 +1,13 @@
+id: "pyv1"
+
+titulo: "Pepe y Vizio - Quieren Mi Luz"
+
+tipo: "Music Video"
+
+url:  "https://vimeo.com/1058788438" 
+
+info: "-Director: Revs & Edu Montes"
+
+-Prod. company: Take a Nap"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Super Speed T1.3"

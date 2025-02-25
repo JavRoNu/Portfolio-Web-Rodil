@@ -18,23 +18,22 @@ print("Working on " + eldir)
 p = re.compile(".txt$")
 lainfotxt = [ s for s in allfiles if p.search(s) ]
 lainfotxt = str(lainfotxt[0])
-
+cwd = os.getcwd()
 #### check for secondary argument for croping and resizing images ####
 if len(sys.argv) < 3 :
     print("Only rebuilding html")
 else:
     if sys.argv[2] == "cr":
         print("Building html with crop and resize")
-        os.system('/pyscripts/cropAndResize.py  "'+ eldir +'"' )
+        os.system(cwd+'\pyscripts\cropAndResize.py  "'+ eldir +'"' )
         
     elif sys.argv[2] == "r":
         print("Building html with resize")
-        os.system("/pyscripts/onlyresize.py "+ eldir )
+        os.system("./pyscripts/onlyresize.py "+ eldir )
     else:
         raise NameError('El tipo de procesado es incorrecto, validos:(cr,r)')
 
 #### html templating ####
-
 file = open(eldir+"/"+lainfotxt, "r",encoding="utf-8")
 
 file = file.readlines()
@@ -82,11 +81,10 @@ lasfotos = [ s for s in fotos if p.search(s) ]
 
 # ordenando por número
 lasfotos2 = "\n".join(lasfotos)
-numbers = re.findall("[0-9]{1,2}",lasfotos2)
-numbers = [int(i) for i in numbers]
+numbers = re.findall("_[0-9]{1,2}_",lasfotos2)
+numbers = [int(i.replace("_","")) for i in numbers]
 
 position = sorted(range(len(numbers)),key=numbers.__getitem__)
-
 lasfotos =  [lasfotos[i] for i in position]
 
 # <div class = "col-md p-3" data-aos="fade-up">
