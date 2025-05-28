@@ -458,3 +458,9 @@ max-height: 32px;
 background-color: #ffffff;
 word-spacing: 2px;
 }
+
+.contact-image-custom {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain; /* Ensures the image scales proportionally without distortion */
+}
