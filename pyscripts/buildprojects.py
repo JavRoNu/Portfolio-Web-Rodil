@@ -106,7 +106,7 @@ head = '''
                 <a class="nav-link navsec" href="reel.html">REEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec" href="about.html">ABOUT</a>
+                <a class="nav-link navsec" href="about.html">CONTACT</a>
               </li>
             </ul>
           </div>
