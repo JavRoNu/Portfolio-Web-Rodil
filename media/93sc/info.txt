@@ -1,0 +1,12 @@
+id: "93sc"
+
+titulo: "93 SIERRA/CROSSES SS25"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1073585626" 
+
+info: "Director: Jean Lafleur"
+
+cam: "Shot on Kodak 16mm 250D/7207 16mm"
+

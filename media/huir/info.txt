@@ -1,0 +1,12 @@
+id: "huir"
+
+titulo: "Kany García, Lia Kali - Huir"
+
+tipo: "Music Video"
+
+url:  "https://vimeo.com/1090604219" 
+
+info: "-Director: Yungakita & Revs
+-Prod. company: Take a Nap"
+
+cam: "Shot on ARRI Alexa 35 + ARRI Signature Primes"

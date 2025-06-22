@@ -43,5 +43,5 @@ py (pyscript.py) arg1 arg2 ....
 - Use ```ResizeThumb.py``` and delete original.
 - Use ```buildpage.py``` with "cr" o "r" as de second argument. ( if "cr" clean old stills and then build html only)
 - Remove old stills.
-- If you dont want to rebuild the whole page with ```todlaweb.py``` change previous and next links manually.
+- If you dont want to rebuild the whole page with ```todalaweb.py``` change previous and next links manually.
 - Update the ```index.html``` with ```buildprojects.py```.
