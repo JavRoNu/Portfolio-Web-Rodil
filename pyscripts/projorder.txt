@@ -6,6 +6,7 @@ bigscape
 daikiri
 huir
 93sc
+diesel
 autumn
 pyv1
 titiritar

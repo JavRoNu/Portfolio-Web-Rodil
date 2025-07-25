@@ -1,0 +1,12 @@
+id: "diesel"
+
+titulo: "Diesel Behind The Demin. Episode 5: Waste To Treasure"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1104246518" 
+
+info: "Director: -Luke Casey
+-Prod. company: Collateral Films"
+
+cam: "Shot on ARRI Alexa Mini + Angenieux EZ1/EZ2 + MiniDV + GoPro Hero 12"
