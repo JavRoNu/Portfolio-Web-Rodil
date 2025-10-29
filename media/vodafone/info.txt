@@ -1,0 +1,13 @@
+id: "vodafone"
+
+titulo: "Vodafone x Netflix"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1126155208" 
+
+info: "-Director: Héctor Herce"
+
+-Prod. company: Lobokane"
+
+cam: "Shot on ARRI Alexa Mini + Cooke S4 + Angenieux 25-250 HR + Angenieux EZ-2 / ARRI Mini LF + Leica R"

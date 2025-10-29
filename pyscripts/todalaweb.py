@@ -16,13 +16,13 @@ orden = [s.rstrip("\n") for s in orden]
 thumb = False
 html = True
 
-# no funciona por que se ñadieron formatos nuevos png jpeg
+# no funciona por que se añadieron formatos nuevos png jpeg
 if thumb == True:
     print("Creating thumbnails")
     for i in orden:
         print("Working on "+i)
         inside = "media/"+ i + "/"+i+"_thumb.jpg"
-        os.system("/pyscripts/ResizeThumb.py " + inside + " 652 366")
+        os.system("py /pyscripts/ResizeThumb.py " + inside + " 652 366")
     print("All thumbnails completed")
 
 
@@ -31,5 +31,6 @@ if html == True:
     for i in orden: 
         inside = "media\\"+ i  
         print("\n----------------------\n")
-        os.system("pyscripts\\buildpage.py  " + inside )
+        print("pyscripts\\buildpage.py  " + inside )
+        os.system("py pyscripts\\buildpage.py  " + inside )
     print("All project pages completed!")
