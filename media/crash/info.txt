@@ -1,0 +1,12 @@
+id: "crash"
+
+titulo: "Cold Culture Fall 25"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1114275025" 
+
+info: "-Director: Max Lusson"
+
+cam: "Alexa Mini / Phantom Flex 4K + Zeiss Superspeed 1.3"
+

@@ -31,6 +31,6 @@ if html == True:
     for i in orden: 
         inside = "media\\"+ i  
         print("\n----------------------\n")
-        print("pyscripts\\buildpage.py  " + inside )
-        os.system("py pyscripts\\buildpage.py  " + inside )
+        print("pyscripts\\buildPage.py  " + inside )
+        os.system("py pyscripts\\buildPage.py  " + inside )
     print("All project pages completed!")

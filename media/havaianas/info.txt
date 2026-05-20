@@ -1,0 +1,13 @@
+id: "havaianas"
+
+titulo: "Havaianas - Walking Together Since ... (DC)"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1175227291" 
+
+info: "-Director: Es-tres
+
+-Prod. company: Odyssey"
+
+cam: "Shot on ARRI Alexa Mini + Zeiss Super Speed T1.3"

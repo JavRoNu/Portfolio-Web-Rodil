@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M2H7F8L7');</script>
+      <!-- End Google Tag Manager -->
       <meta charset="UTF-8">
       <META HTTP-EQUIV = "X-UA-<!doctype html">
       <meta name= "viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
       <title>Carlos Rodil Cinematographer</title>
-
+ 
       <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
-      
+
             <!--Bootrap 5 descargado y en el repo 
       <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
       <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
@@ -27,66 +34,50 @@
 
   </head>
   <body id = "lgrad">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7F8L7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Barra de navegación superior-->
     <nav class="navbar sticky-top navbar-light navbar-expand-sm">
-        <div class="container-fluid">
+        <div class="container-fluid"> 
           <div class="navbar-brand ms-md-5 mt-1">
             <img src="media/rodilogo1_low_gray_pl2.svg" alt="" class="img-fluid" id = "mainlogo">
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
             <ul class="navbar-nav ms-auto pe-md-5">
               <li class="nav-item">
                 <a class="nav-link navsec" href="index.html">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navsec selec2" id = "activenavlink3" href = #>REEL</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navsec" href="about.html">CONTACT</a>
+                <a class="nav-link navsec" href="about.html" >CONTACT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-    <!--Jumbotron superior https://vimeo.com/772037239/1f84261a8b-->
-    <!--https://vimeo.com/269188333/e49a7863ad-->
-    <div class="container-lg  pt-5 mt-2" id ="jtcontainer">
-        <div class="ratio ratio-16x9 shadow" style = "background-color: #000;">
-            <iframe src="https://player.vimeo.com/video/1030957082?autoplay=0&loop=0&muted=0&portrait=0" frameborder="0"
-              allow="autoplay; fullscreen"  allowfullscreen></iframe>
-        </div>
-    </div>
-        <!-- Footer con RRSS -->
-        <div class="container-lg pt-5 mt-5 pb-2" id="misredes">
-            <div class="d-flex justify-content-center">
-            <div id = "gogo"> 
-            <a class="shadow btn btn-white"
-             href="https://vimeo.com/carlosrodil"
-              role="button"><i class="fab fa-vimeo-v"></i>
-            </a>
-            <a class="shadow btn btn-white mx-4"
-              href="https://www.instagram.com/carlos.rodil_/" 
-              role="button"><i class="fab fa-instagram"></i>
-            </a>
-              <a class="shadow btn btn-white"
-                href="https://www.imdb.com/name/nm7492357/"
-                 role="button"><i class="fab fa-imdb"></i>
-              </a>
-              </div>
+    <!-- error 404 message -->
+    <div class="container-lg pb-5 pt-5 mt-2 px-3">
+        <div class="row">
+            <div class="col-12 d-flex flex-column aligns-items-center justify-content-center text-center">
+                <h1 class="display-1 fw-bold">404</h1>
+                <p class="fs-3"> <span class="text-danger">Opps!</span> The page you are looking for does not exist.</p>
+                <p class="lead">
+                    The link may be broken or the page may have been removed. <a href="index.html" class="text-decoration-none" >Go back to projects</a>.
+                </p>
             </div>
-          </div>
-    <!-- Footer con registro -->
+        </div>
+      <!-- Footer con registro -->
     <div class="container-fluid d-flex aligns-items-center justify-content-center pb-5 pt-3">
-        <p id ="elcopy">©2024.</p>
-      </div>
-              <!-- Funciones propias en js de modificación etc -->
-              <script src="mijava.js"></script>
-    
-          
-      </body>
-    </html>
+      <p id ="elcopy">©2024.</p>
+    </div>
+            <!-- Funciones propias en js de modificación etc -->
+            <script src="mijava.js"></script>
+            <script src="carrousell.js"></script>
+
+ </body>
+</html>

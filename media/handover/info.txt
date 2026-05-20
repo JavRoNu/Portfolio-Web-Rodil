@@ -1,0 +1,12 @@
+id: "handover"
+
+titulo: "Handover - The NEXXXT Ex"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1181542526" 
+
+info: "-Director: Max Lusson"
+
+cam: "Arri Alexa 35 (s16) + Arri Ultra 16 Primes + Arri Zeiss Vario Sonnar 11-110mm"
+

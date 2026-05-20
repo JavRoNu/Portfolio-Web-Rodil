@@ -1,0 +1,13 @@
+id: "peta_fencers"
+
+titulo: "Peta - Sharpen your sword, go vegan"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1192531373" 
+
+info: "-Director: Biceps
+
+-Prod. company: Contrario"
+
+cam: "Shot on ARRI Alexa 35 + Zeiss Supreme Primes + Fujinon 25-250mm"

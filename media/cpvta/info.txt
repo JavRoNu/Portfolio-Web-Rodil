@@ -1,0 +1,13 @@
+id: "cpvta"
+
+titulo: "Walls - Cuantas penas vale tu amor"
+
+tipo: "Music video"
+
+url: "https://vimeo.com/1126183936" 
+
+info: "-Director: Max Lusson
+-Prod. company: Proserpa"
+
+cam: "Alexa Mini + Zeiss Ultra Primes"
+

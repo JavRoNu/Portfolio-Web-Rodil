@@ -1,0 +1,13 @@
+id: "carlamorrison"
+
+titulo: "Carla Morrison - Si Te Quedas ft. Pablo Alborán (DC)"
+
+tipo: "Music Video"
+
+url:  "https://vimeo.com/1175570299" 
+
+info: "-Director: Es-tres
+
+-Prod. company: Take a Nap"
+
+cam: "Shot on ARRI Alexa Mini LF + Cooke S7"

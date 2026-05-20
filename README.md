@@ -20,7 +20,7 @@ Pyhton3 scripts made for templating pages and processing web-images.
 py (pyscript.py) arg1 arg2 .... 
 ```
 
-- builpage.py: builds a project page with the template given. Takes into account projorder.txt to sort the projects within the next previous buttons.(calls cropAndresize.py or onlyresize.py if needed)
+- builPage.py: builds a project page with the template given. Takes into account projorder.txt to sort the projects within the next previous buttons.(calls cropAndresize.py or onlyresize.py if needed)
   - arg1:  project to build -> "media/(projid)"
   - arg2: only html, crop and resize, resize only -> empty,"cr","r"
 - cropAndResize.py: crops and resizes project´s images to the desired width and height (dwidth l85,dheight l86) keeping the aspect ratio.
@@ -34,14 +34,21 @@ py (pyscript.py) arg1 arg2 ....
 - reparing.py: script made for projects or images that fail in the croping procces, uses alternative method.
   - arg1: id of the project -> "(id)"
 - todalaweb.py: lists all projects in media and calls buildpage.py or ResizeThumb.py to rebuilt the whole projects section using the template contained in buildpage. Non exectuable design Ajdust variables thumb and html lines 17,18
-- buildprojects.py: build the index page given the project order specified in projorder.txt
+- buildProjects.py: build the index page given the project order specified in projorder.txt
+- update.py: makes everything and cleans unecessary files.
 
 ## Updating
 
+### New (Auto)
+- Add project folder with thumbnail, stills, and ``info.txt``
+- Add project_id to ```pyscripts/projorder.txt``` in the desired position.
+- Use ```update.py```.
+
+### Old (Manual)
 - Add project folder with thumbnail, stills, and ``info.txt``
 - Add project_id to ```pyscripts/projorder.txt``` in the desired position.
 - Use ```ResizeThumb.py``` and delete original.
-- Use ```buildpage.py``` with "cr" o "r" as de second argument. ( if "cr" clean old stills and then build html only)
+- Use ```buildPage.py``` with "cr" o "r" as de second argument. ( if "cr" clean old stills and then build html only)
 - Remove old stills.
 - If you dont want to rebuild the whole page with ```todalaweb.py``` change previous and next links manually.
-- Update the ```index.html``` with ```buildprojects.py```.
+- Update the ```index.html``` with ```buildProjects.py```.

@@ -1,0 +1,13 @@
+id: "peta_cowboy"
+
+titulo: "Peta - Load your gun, go vegan"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1192530973" 
+
+info: "-Director: Biceps
+
+-Prod. company: Contrario"
+
+cam: "Shot on ARRI Alexa 35 + Arri Signature Primes + Fujinon 25-250mm"

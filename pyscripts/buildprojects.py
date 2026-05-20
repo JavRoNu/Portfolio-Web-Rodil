@@ -61,6 +61,13 @@ head = '''
 <!DOCTYPE html>
 <html lang = "en">
   <head>
+        <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M2H7F8L7');</script>
+      <!-- End Google Tag Manager -->
       <meta charset="UTF-8">
       <META HTTP-EQUIV = "X-UA-<!doctype html">
       <meta name= "viewport" content="width=device-width, initial-scale=1.0">
@@ -86,6 +93,10 @@ head = '''
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body id = "lgrad">
+      <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2H7F8L7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Barra de navegación superior-->
     <!--<nav class="navbar navbar-light navbar-expand-sm">  el anterior -->
@@ -101,9 +112,6 @@ head = '''
             <ul class="navbar-nav ms-auto pe-md-5">
               <li class="nav-item">
                 <a class="nav-link navsec" href=# id = "activenavlink3">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navsec" href="reel.html">REEL</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navsec" href="about.html">CONTACT</a>

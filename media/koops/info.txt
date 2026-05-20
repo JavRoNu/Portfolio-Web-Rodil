@@ -1,0 +1,11 @@
+id: "koops"
+
+titulo: "Koops - The art of moving"
+
+tipo: "Commercial"
+
+url:  "https://vimeo.com/1181540902" 
+
+info: "-Director: Andrea Ferrer"
+
+cam: "Shot on ARRI Alexa Mini + Angenieux Optimo 28-76mm + Sony VX2000E"
